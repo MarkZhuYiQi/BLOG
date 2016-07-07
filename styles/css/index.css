@@ -1,0 +1,11 @@
+.navbar{
+    margin-bottom:0;
+}
+.text-logo{
+    color:#999;
+    font-size:14px;
+}
+.image img{
+    display:block;
+    max-width:100%;
+}
