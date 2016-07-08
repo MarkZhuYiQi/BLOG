@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -18,7 +18,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.html" class="navbar-brand">
-                <img src="../img/logo/png" alt="logo">
+                <!--<img src="../img/logo/png" alt="logo">-->
+                <div class="image-logo"></div>
                 <!--<div class="text-logo">-->
                     <!--<span>Mark<br /><span class="slogan">Mark Space</span></span>-->
                 <!--</div>-->
@@ -26,14 +27,14 @@
         </div>
         <div class="collapse navbar-collapse" id="myNav">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">首页</a></li>
-                <li><a href="#">新闻</a></li>
-                <li><a href="#">相关技术</a></li>
-                <li><a href="#">历史版本</a></li>
-                <li><a href="#">关于</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 新闻</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 相关技术</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 历史版本</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-check"></span> 关于</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toogle" data-toggle="dropdown">
-                        联系我们
+                        <span class="glyphicon glyphicon-th"></span> 联系我们
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -46,11 +47,106 @@
     </div>
 </nav>
 
-
-<div class="image">
-    <img src="../styles/img/banner-home-cn.jpg" alt="">
+<div class="carousel slide" id="myCar" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCar" data-slide-to="0" class="active"></li>
+        <li data-target="#myCar" data-slide-to="1"></li>
+        <li data-target="#myCar" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="../styles/img/carousel3.jpg" alt="3">
+            <div class="carousel-caption">
+                <h3 class="itemTitle">Lamborghini LP700</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../styles/img/carousel2.jpg" alt="2">
+            <div class="carousel-caption">
+                <h3 class="itemTitle">Audi R8</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../styles/img/carousel1.jpg" alt="1">
+            <div class="carousel-caption">
+                <h3 class="itemTitle">CIVIC</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <a href="#myCar" class="carousel-control left" data-slide="prev"></a>
+    <a href="#myCar" class="carousel-control right" data-slide="next"></a>
 </div>
 
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="alert alert-danger">
+                    please <a href="#" class="alert-link">login</a> or <a href="#" class="alert-link">register</a> a new account to acquire all the functions!
+                    <button class="close" data-dismiss="alert"><span>&times;</span></button>
+                </div>
+                <div class="newsList">
+                    <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
+                    <div class="lgroup text-center">
+                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 108</button></button>
+                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-tags"></span> 108</button>
+                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-eye-open"></span> <span> 100,028</span></button>
+                    </div>
+
+                    <a href="#">
+                        <img src="../styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
+                    </a>
+                    <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
+                    <button class="btn btn-danger read">阅读全文</button>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-4" style="background:green;">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left">
+                <h3 class="footerTitle">合作伙伴</h3>
+                <ul>
+                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 right">
+                <h3>联系方式</h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul>
+                            <li><a href="#">email:zhuyiqi_026@163.com</a></li>
+                            <li><a href="#">QQ:441595694</a></li>
+                            <li><a href="#">Tel:151515151515</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#"><img src="../styles/img/code.png" alt="" class="img-responsive center-block"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom text-center">
+            Copyright © 2013 | All Rights Reserved.
+        </div>
+    </div>
+
+</footer>
 
 <script type="text/javascript" src="../styles/js/jquery.js"></script>
 <script type="text/javascript" src="../styles/js/bootstrap.js"></script>
