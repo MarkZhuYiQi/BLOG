@@ -4,7 +4,9 @@ h1,h2,h3,h4,h5,h6{
     line-height:1.5 !important;
 }
 body{
-    font-family:"微软雅黑", "Microsoft YaHei", 'Helvetica Neue', Avenir, Helvetica, 'Lantinghei SC', "Hiragino Sans GB",  "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif !important
+    font-family:"微软雅黑", "Microsoft YaHei", 'Helvetica Neue', Avenir, Helvetica, 'Lantinghei SC', "Hiragino Sans GB",  "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif !important;
+    background-color:#eee;
+    outline:none !important;
 }
 ol,ul{
     list-style:none;
@@ -48,11 +50,11 @@ a,a:hover{
 }
 
 .alert{
-    margin:20px;
+    margin:2% 0;
 }
 .newsList{
     display:block;
-    margin:20px;
+    margin:2% 0;
     border:1px solid transparent;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
@@ -99,9 +101,42 @@ a,a:hover{
     margin-left:87%;
 
 }
+.rightView .alert, .rightView .alert-info{
+    padding:0;
+    background:#fff;
+    border:none;
+}
+.newestNews{
+    margin:4% 0;
+    box-shadow:2px 2px 3px #ccc;
+}
+.newestNews .badge{
+    background:orangered;
+}
+.page{
 
-
-
+}
+.pagination{
+    box-shadow:2px 2px 3px #ccc;
+    margin-bottom:4%;
+}
+.rightView .comment img{
+    width:40px;
+    height:auto;
+    background:#eee;
+    margin:1% 0;
+}
+.rightView .comment .detail{
+    background:#e2e2e2;
+    display:inline-block;
+    font-size:13px;
+    width:80%;
+    padding:2% 6%;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-left:3%;
+}
 
 
 #footer{

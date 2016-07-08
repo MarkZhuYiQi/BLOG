@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/1467946121523.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/146794613339.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/1467946206129.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/1467946281900.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/1467946381728.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/1467946395926.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/carousel1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/carousel2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/carousel3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/code.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/content1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/megane.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template_c/91e4d3b7d5872e67efd3ff9774b15ff2c2f2c499_0.file.test.tpl.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/img/1467902405555_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/img/1467903552354_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/img/1467905619399_02.jpg" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/img/6.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/index.css" afterPath="$PROJECT_DIR$/styles/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/index.html" afterPath="$PROJECT_DIR$/tpl/index.html" />
@@ -46,34 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tpl/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3151">
-              <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+            <state relative-caret-position="598">
+              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
-                <element signature="e#3818#3825#0" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4118#4125#0" expanded="true" />
+                <element signature="e#7788#7795#0" expanded="true" />
+                <element signature="e#8095#8102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2461">
-              <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76958">
-              <caret line="3346" column="11" selection-start-line="3346" selection-start-column="0" selection-end-line="3346" selection-end-column="11" />
+            <state relative-caret-position="470">
+              <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -113,8 +84,9 @@
         <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/framework/function/function.php" />
         <option value="$PROJECT_DIR$/tpl/index.tpl" />
-        <option value="$PROJECT_DIR$/tpl/index.html" />
+        <option value="$PROJECT_DIR$/styles/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/styles/css/index.css" />
+        <option value="$PROJECT_DIR$/tpl/index.html" />
       </list>
     </option>
   </component>
@@ -213,7 +185,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HTML5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bootstrap" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -297,7 +269,10 @@
       <workItem from="1467611347359" duration="372000" />
       <workItem from="1467897176002" duration="5705000" />
       <workItem from="1467941336955" duration="17967000" />
-      <workItem from="1467964456589" duration="187000" />
+      <workItem from="1467964456589" duration="270000" />
+      <workItem from="1467964834342" duration="454000" />
+      <workItem from="1467966483719" duration="1895000" />
+      <workItem from="1467968463179" duration="2229000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -306,19 +281,26 @@
       <option name="project" value="LOCAL" />
       <updated>1467897560594</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit, prepare to build the homepage.">
+      <created>1467964656224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1467964656224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32151000" />
+    <option name="totallyTimeSpent" value="36812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -674,13 +656,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/bootstrap-theme.min.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
         </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/js/jquery.js">
@@ -692,28 +674,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76958">
-          <caret line="3346" column="11" selection-start-line="3346" selection-start-column="0" selection-end-line="3346" selection-end-column="11" />
+        <state relative-caret-position="274">
+          <caret line="1143" column="1" selection-start-line="1143" selection-start-column="1" selection-end-line="1143" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3151">
-          <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+        <state relative-caret-position="598">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
-            <element signature="e#3818#3825#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4118#4125#0" expanded="true" />
+            <element signature="e#7788#7795#0" expanded="true" />
+            <element signature="e#8095#8102#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
