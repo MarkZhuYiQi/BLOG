@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>index</title>
     <link rel="stylesheet" href="../styles/css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/css/font-awesome.css">
     <link rel="stylesheet" href="../styles/css/index.css">
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-up" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
@@ -18,8 +19,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.html" class="navbar-brand">
-                <!--<img src="../img/logo/png" alt="logo">-->
-                <div class="image-logo"></div>
+                <img src="../styles/img/eagle.png" alt="logo" class="image-logo">
                 <!--<div class="text-logo">-->
                     <!--<span>Mark<br /><span class="slogan">Mark Space</span></span>-->
                 <!--</div>-->
@@ -27,7 +27,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNav">
             <ul class="nav navbar-nav">
-                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-list"></span> 新闻</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-list"></span> 相关技术</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-list"></span> 历史版本</a></li>
@@ -107,6 +107,12 @@
                     </a>
                     <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
                     <button class="btn btn-danger read">阅读全文</button>
+                    <div class="date text-center">
+                        <span class="month">7月</span><span class="day">29</span>
+                    </div>
+                    <div class="bookmark">
+                        <img src="../styles/img/bookmark.png" alt="">
+                    </div>
                 </div>
                 <div class="newsList">
                     <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
@@ -149,6 +155,39 @@
                 </div>
             </div>
             <div class="col-md-4 rightView">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        用户登录
+                    </div>
+                    <div class="panel-body">
+                        <form action="#" method="post" class="loginModule">
+                            <div class="login">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" class="submit btn btn-danger pull-left" name="submit" value="login">
+                            <a type="register" class="register btn btn-danger pull-right" href="#">register</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="icon icon-quote-left"></span> 欢迎 <span class="icon icon-quote-right"></span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="account">
+                            <img src="../styles/img/6.gif" alt="">
+                            <span class="icon icon-user"></span> red_026
+                            <a type="register" class="logoff btn btn-danger pull-right" href="#">logoff</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="newestNews alert alert-info">
                     <span href="#" class="list-group-item active">最新文章<button class="close" data-dismiss="alert"><span>&times;</span></button></span>
                     <a href="#" class="list-group-item">为纯电动让路 奥迪或将弃用V8发动机 <span class="badge">128,021</span></a>
@@ -172,10 +211,24 @@
                                 <a href="#">奥迪辣鸡，还我V8</a>
                             </div>
                         </li>
-
                     </ul>
                 </div>
-
+                <div class="list">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#">分类目录</a></li>
+                                <li><a href="#">热门标签</a></li>
+                                <li><a href="#">热门标签</a></li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item"><a href="#">bootstrap</a></li>
+                        <li class="list-group-item"><a href="#">PHP</a></li>
+                        <li class="list-group-item"><a href="#">HTML5</a></li>
+                        <li class="list-group-item"><a href="#">JQuery</a></li>
+                        <li class="list-group-item"><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

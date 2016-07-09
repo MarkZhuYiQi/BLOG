@@ -11,6 +11,13 @@ body{
 ol,ul{
     list-style:none;
 }
+a,input,button{
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
 a,a:hover{
     color:#666;
 }
@@ -22,19 +29,18 @@ a,a:hover{
     font-size:14px;
 }
 .navbar .image-logo{
-    width:60px;
-    height:40px;
+    width:auto;
+    height: 45px;
     margin-top:-11px;
-    background:#999;
     float:left;
 }
-.nav{
+#myNav .nav{
     float:right;
 }
 
 
 
-.nav .image img{
+#myNav .nav .image img{
     display:block;
     max-width:100%;
     margin:0 auto;
@@ -50,11 +56,11 @@ a,a:hover{
 }
 
 .alert{
-    margin:2% 0;
+    margin:4% 0 2% 0;
 }
 .newsList{
     display:block;
-    margin:2% 0;
+    margin:4% 0 0 0;
     border:1px solid transparent;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
@@ -64,6 +70,7 @@ a,a:hover{
     -moz-box-shadow: 2px 2px 3px #ccc;
     box-shadow: 2px 2px 3px #ccc;
     padding:0 5% 2% 5%;
+    position:relative;
 }
 .newsList .newsImg{
     max-width:100%;
@@ -71,6 +78,7 @@ a,a:hover{
 }
 .newsList .newsTitle{
     font-size:30px;
+    padding-top:2%;
     padding-bottom:2%;
 }
 .newsList .newsSummary{
@@ -101,13 +109,83 @@ a,a:hover{
     margin-left:87%;
 
 }
+.newsList .date{
+    color:#fff;
+    background:#C9302C;
+    height:60px;
+    width:60px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    border-radius:40px;
+    position:absolute;
+    top: -3%;;
+    left:-3%;
+}
+.newsList .date .month{
+    display:block;
+    font-size:12px;
+    padding-top:7%;
+}
+.newsList .date .day{
+    margin-top:-5%;
+    display:block;
+    font-weight:bold;
+    font-size:30px;
+}
+.newsList .bookmark{
+
+}
+.newsList .bookmark img{
+    width: 6%;
+    height:auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    position:absolute;
+    left:93%;
+    top:-1%;
+}
+.newsList .mark{
+    margin:160% 15% 0 15%;
+    width:72%;
+    height:36.5%;
+    background:blue
+}
 .rightView .alert, .rightView .alert-info{
     padding:0;
     background:#fff;
     border:none;
 }
+.rightView a, .rightView input{
+    font-size:12px;
+}
+.rightView .panel{
+    box-shadow:2px 2px 3px #ccc;
+    margin:8% 0 0 0;
+}
+.rightView .loginModule,.rightView .account{
+    padding:3%;
+}
+.rightView .login .input-group{
+    margin:0 0 5% 0;
+}
+.rightView .loginModule .submit,.rightView .loginModule .register,.rightView .account .logoff{
+    width:45%;
+    font-size:14px;
+}
+@keyframes myani {
+    from{
+        background:#D25951;
+    }
+    to{
+        background:#A63428;
+    }
+}
+
+
+
 .newestNews{
-    margin:4% 0;
+    margin:4% 0 0 0;
     box-shadow:2px 2px 3px #ccc;
 }
 .newestNews .badge{
@@ -119,6 +197,9 @@ a,a:hover{
 .pagination{
     box-shadow:2px 2px 3px #ccc;
     margin-bottom:4%;
+}
+.rightView .comment{
+    box-shadow:2px 2px 3px #ccc;
 }
 .rightView .comment img{
     width:40px;
@@ -137,8 +218,22 @@ a,a:hover{
     border-radius:5px;
     margin-left:3%;
 }
-
-
+.rightView .navContent{
+    box-shadow:2px 2px 3px #ccc;
+    border:none;
+}
+.rightView .navContent .panel-heading{
+    background:#337AB7;
+}
+.rightView .list{
+    box-shadow:2px 2px 3px #ccc;
+    margin-top:4%;
+}
+.list .list-group{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
 #footer{
     height:250px;
     background:#333;
