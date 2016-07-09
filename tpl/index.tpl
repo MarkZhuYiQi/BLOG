@@ -6,6 +6,7 @@
     <title>index</title>
     <link rel="stylesheet" href="styles/css/bootstrap.css">
     <link rel="stylesheet" href="styles/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/css/basic.css">
     <link rel="stylesheet" href="styles/css/index.css">
 </head>
 <body>
