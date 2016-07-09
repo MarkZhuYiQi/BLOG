@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="" />
+    <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="BLOG.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="-672">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpl/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -217,11 +230,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\wamp\www\BLOG\tpl" />
       <recent name="D:\wamp\www\BLOG" />
       <recent name="G:\wamp\www\BLOG\styles\js" />
       <recent name="G:\wamp\www\BLOG\styles" />
       <recent name="G:\wamp\www\BLOG\styles\css" />
-      <recent name="G:\wamp\www\BLOG\framework\libs\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\wamp\www\BLOG\styles" />
@@ -297,7 +310,7 @@
       <workItem from="1467964834342" duration="454000" />
       <workItem from="1467966483719" duration="1895000" />
       <workItem from="1467968463179" duration="2229000" />
-      <workItem from="1468031228855" duration="18990000" />
+      <workItem from="1468031228855" duration="19735000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -324,11 +337,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55802000" />
+    <option name="totallyTimeSpent" value="56547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -370,14 +383,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103868">
-          <caret line="4516" column="3" selection-start-line="4516" selection-start-column="3" selection-end-line="4516" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/MVC.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -727,8 +732,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="-672">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding />
         </state>
       </provider>
