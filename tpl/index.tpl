@@ -4,49 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>index</title>
-    <link rel="stylesheet" href="../styles/css/bootstrap.css">
-    <link rel="stylesheet" href="../styles/css/font-awesome.css">
-    <link rel="stylesheet" href="../styles/css/index.css">
+    <link rel="stylesheet" href="styles/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/css/index.css">
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
-                <span class="sr-only">响应式切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="index.html" class="navbar-brand">
-                <img src="../styles/img/eagle.png" alt="logo" class="image-logo">
-                <!--<div class="text-logo">-->
-                    <!--<span>Mark<br /><span class="slogan">Mark Space</span></span>-->
-                <!--</div>-->
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNav">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 新闻</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 相关技术</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-list"></span> 历史版本</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-check"></span> 关于</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toogle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-th"></span> 联系我们
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
+{include file="tpl/header.html"}
 <div class="carousel slide" id="myCar" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCar" data-slide-to="0" class="active"></li>
@@ -55,21 +18,21 @@
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="../styles/img/carousel3.jpg" alt="3">
+            <img src="styles/img/carousel3.jpg" alt="3">
             <div class="carousel-caption">
                 <h3 class="itemTitle">Lamborghini LP700</h3>
                 <p></p>
             </div>
         </div>
         <div class="item">
-            <img src="../styles/img/carousel2.jpg" alt="2">
+            <img src="styles/img/carousel2.jpg" alt="2">
             <div class="carousel-caption">
                 <h3 class="itemTitle">Audi R8</h3>
                 <p></p>
             </div>
         </div>
         <div class="item">
-            <img src="../styles/img/carousel1.jpg" alt="1">
+            <img src="styles/img/carousel1.jpg" alt="1">
             <div class="carousel-caption">
                 <h3 class="itemTitle">CIVIC</h3>
                 <p></p>
@@ -103,7 +66,7 @@
                     </div>
 
                     <a href="#">
-                        <img src="../styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
+                        <img src="styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
                     </a>
                     <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
                     <button class="btn btn-danger read">阅读全文</button>
@@ -111,7 +74,7 @@
                         <span class="month">7月</span><span class="day">29</span>
                     </div>
                     <div class="bookmark">
-                        <img src="../styles/img/bookmark.png" alt="">
+                        <img src="styles/img/bookmark.png" alt="">
                     </div>
                 </div>
                 <div class="newsList">
@@ -123,10 +86,16 @@
                     </div>
 
                     <a href="#">
-                        <img src="../styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
+                        <img src="styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
                     </a>
                     <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
                     <button class="btn btn-danger read">阅读全文</button>
+                    <div class="date text-center">
+                        <span class="month">7月</span><span class="day">29</span>
+                    </div>
+                    <div class="bookmark">
+                        <img src="styles/img/bookmark.png" alt="">
+                    </div>
                 </div>
                 <div class="newsList">
                     <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
@@ -137,10 +106,16 @@
                     </div>
 
                     <a href="#">
-                        <img src="../styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
+                        <img src="styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
                     </a>
                     <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
                     <button class="btn btn-danger read">阅读全文</button>
+                    <div class="date text-center">
+                        <span class="month">7月</span><span class="day">29</span>
+                    </div>
+                    <div class="bookmark">
+                        <img src="styles/img/bookmark.png" alt="">
+                    </div>
                 </div>
                 <div class="page text-center">
                     <ul class="pagination">
@@ -182,7 +157,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="account">
-                            <img src="../styles/img/6.gif" alt="">
+                            <img src="styles/img/6.gif" alt="">
                             <span class="icon icon-user"></span> red_026
                             <a type="register" class="logoff btn btn-danger pull-right" href="#">logoff</a>
                         </div>
@@ -200,13 +175,13 @@
                             最新评论
                         </li>
                         <li class="list-group-item">
-                            <img src="../styles/img/6.gif" alt="" class="img-circle">
+                            <img src="styles/img/6.gif" alt="" class="img-circle">
                             <div class="detail">
                                 <a href="#">奥迪辣鸡，还我V8</a>
                             </div>
                         </li>
                         <li class="list-group-item">
-                            <img src="../styles/img/6.gif" alt="" class="img-circle">
+                            <img src="styles/img/6.gif" alt="" class="img-circle">
                             <div class="detail">
                                 <a href="#">奥迪辣鸡，还我V8</a>
                             </div>
@@ -233,56 +208,20 @@
         </div>
     </div>
 </section>
-
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 left">
-                <h3 class="footerTitle">合作伙伴</h3>
-                <ul>
-                    <li><a href="#">合作伙伴</a></li>
-                    <li><a href="#">合作伙伴</a></li>
-                    <li><a href="#">合作伙伴</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 right">
-                <h3>联系方式</h3>
-                <div class="row">
-                    <div class="col-md-8">
-                        <ul>
-                            <li><a href="#">email:zhuyiqi_026@163.com</a></li>
-                            <li><a href="#">QQ:441595694</a></li>
-                            <li><a href="#">Tel:151515151515</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" data-toggle="modal" data-target="#code" data-backdrop="true" data-keyboard="true" data-show="true">
-                            <img src="../styles/img/code.png" alt="" class="img-responsive center-block">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom text-center">
-            Copyright © 2013 | All Rights Reserved.
-        </div>
-    </div>
-
-</footer>
-
+{include file="tpl/footer.html"}
 <div class="modal fade" id="code" tableindex="-1">
     <div class="modal-dialog modal-md">
         <div class="modal-body">
             <div class="container-fluid">
                 <div>
                     <button class="close" data-dismiss="modal"><span>&times;</span></button>
-                    <img src="../styles/img/code.png" alt="code" class="img-responsive center-block">
+                    <img src="styles/img/code.png" alt="code" class="img-responsive center-block">
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="../styles/js/jquery.js"></script>
-<script type="text/javascript" src="../styles/js/bootstrap.js"></script>
+<script type="text/javascript" src="styles/js/jquery.js"></script>
+<script type="text/javascript" src="styles/js/bootstrap.js"></script>
 </body>
 </html>

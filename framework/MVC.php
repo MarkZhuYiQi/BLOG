@@ -31,7 +31,6 @@ class MVC{
     public static function run($config){
         self::$config=$config;
         self::init_view();
-        self::init_view();
         self::init_controller();
         self::init_method();
         C(self::$controller,self::$method);

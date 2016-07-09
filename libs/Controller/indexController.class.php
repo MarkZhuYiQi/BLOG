@@ -12,9 +12,9 @@ use framework\libs\core as core;
 class indexController
 {
     function index(){
-        $model=M("index");
-        $data=$model->index();
-        core\VIEW::assign(array("data"=>$data));
-        core\VIEW::display("test.tpl");
+//        $model=M("index");
+//        $data=$model->index();
+//        core\VIEW::assign(array("data"=>$data));
+        core\VIEW::display("index.tpl");
     }
 }

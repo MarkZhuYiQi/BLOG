@@ -45,6 +45,9 @@ a,a:hover{
     max-width:100%;
     margin:0 auto;
 }
+#myCar{
+    margin-top:50px;
+}
 .carousel-inner img{
     margin:0 auto;
 }
