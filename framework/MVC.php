@@ -28,11 +28,33 @@ class MVC{
     public static function init_method(){
         self::$method=isset($_GET["method"])?$_GET["method"]:"index";
     }
+    public static function init_controller_admin(){
+        self::$controller=isset($_GET["controller"])?$_GET["controller"]:"admin";
+    }
+    public static function init_method_admin(){
+        self::$method=isset($_GET["method"])?$_GET["method"]:"admin";
+    }
+
+    public static function init_page(){
+        $pattern="/\/([\w\-]+).[\w]+$/";
+        if(preg_match_all($pattern,$_SERVER["SCRIPT_NAME"],$match)){
+            switch($match[1][0]){
+                case "index":
+                    self::init_controller();
+                    self::init_method();
+                    break;
+                case "admin":
+                    self::init_controller_admin();
+                    self::init_method_admin();
+                    break;
+            }
+        }
+    }
     public static function run($config){
+        self::init_page();
         self::$config=$config;
         self::init_view();
-        self::init_controller();
-        self::init_method();
+        self::init_page();
         C(self::$controller,self::$method);
     }
 

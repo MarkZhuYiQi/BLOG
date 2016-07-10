@@ -67,7 +67,7 @@
 }
 .newsList .date{
     color:#fff;
-    background:#C9302C;
+    background:#D25951;
     height:60px;
     width:60px;
     -webkit-border-radius:40px;
@@ -114,6 +114,10 @@
 }
 .rightView a, .rightView input{
     font-size:12px;
+}
+.rightView .input-group-addon{
+    background:#D25951;
+    color:#fff;
 }
 .rightView .panel{
     box-shadow:2px 2px 3px #ccc;
