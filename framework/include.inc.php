@@ -11,6 +11,6 @@ $paths=array(
     ROOT_PATH."/framework/function/function.php",
     ROOT_PATH."/framework/libs/core/VIEW.class.php",
     ROOT_PATH."/framework/libs/core/DB.class.php",
-//    ROOT_PATH."/framework/libs/DB/mysql.class.php",
+    ROOT_PATH."/framework/libs/DB/mysqli.class.php",
     ROOT_PATH."/framework/libs/view/Smarty/Smarty.class.php"
 );

@@ -8,11 +8,11 @@
 
 namespace framework\libs\core;
 
-
 class DB
 {
     public static $db;
     public static function init($dbType,$config){
+        $dbType="framework\\libs\\DB\\$dbType";
         self::$db=new $dbType;
         self::$db->connect($config);
     }

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>index</title>
-    <link rel="stylesheet" href="styles/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/css/font-awesome.css">
-    <link rel="stylesheet" href="styles/css/basic.css">
-    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="{$css_path}/bootstrap.css">
+    <link rel="stylesheet" href="{$css_path}/font-awesome.css">
+    <link rel="stylesheet" href="{$css_path}/basic.css">
+    <link rel="stylesheet" href="{$css_path}/index.css">
 </head>
 <body>
 {include file="tpl/header.html"}
@@ -222,7 +222,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="styles/js/jquery.js"></script>
-<script type="text/javascript" src="styles/js/bootstrap.js"></script>
+<script type="text/javascript" src="{$JS_PATH}/jquery.js"></script>
+<script type="text/javascript" src="{$JS_PATH}/bootstrap.js"></script>
 </body>
 </html>

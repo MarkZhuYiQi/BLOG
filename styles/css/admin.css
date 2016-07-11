@@ -1,0 +1,54 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    color:#333;
+    line-height:1.5 !important;
+}
+body{
+    font-family:"微软雅黑", "Microsoft YaHei", 'Helvetica Neue', Avenir, Helvetica, 'Lantinghei SC', "Hiragino Sans GB",  "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif !important;
+    outline:none !important;
+}
+ol,ul{
+    list-style:none;
+}
+a,input,button{
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+a,a:hover{
+    color:#666;
+}
+header{
+    height:50px;
+    text-align:center;
+    border-bottom:1px solid #ccc;
+}
+.nav{
+    border-bottom:1px solid #ccc;
+}
+.user{
+    display:block;
+    float:right;
+    padding-right:15%;
+}
+
+
+
+
+.admin_login{
+    width:40%;
+    height:auto;
+    margin:20% auto;
+    box-shadow:2px 2px 3px #ccc;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.admin_login .input-group{
+    margin-bottom:2%;
+}
+.admin_login .submit,.admin_login .forget{
+    width:45%;
+}

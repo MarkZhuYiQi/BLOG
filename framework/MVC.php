@@ -20,7 +20,7 @@ class MVC{
         core\VIEW::init("Smarty",self::$config["viewConfig"]);
     }
     public static function init_db(){
-        core\DB::init("mysql",self::$config["dbConfig"]);
+        core\DB::init("mysqli",self::$config["dbConfig"]);
     }
     public static function init_controller(){
         self::$controller=isset($_GET["controller"])?$_GET["controller"]:"index";
@@ -32,28 +32,28 @@ class MVC{
         self::$controller=isset($_GET["controller"])?$_GET["controller"]:"admin";
     }
     public static function init_method_admin(){
-        self::$method=isset($_GET["method"])?$_GET["method"]:"admin";
+        self::$method=isset($_GET["method"])?$_GET["method"]:"index";
     }
 
     public static function init_page(){
-        $pattern="/\/([\w\-]+).[\w]+$/";
+        $pattern="/\/([\w\-]+)\/[\w\-]+.[\w]+$/";
         if(preg_match_all($pattern,$_SERVER["SCRIPT_NAME"],$match)){
             switch($match[1][0]){
-                case "index":
-                    self::init_controller();
-                    self::init_method();
-                    break;
                 case "admin":
                     self::init_controller_admin();
                     self::init_method_admin();
+                    break;
+                default:
+                    self::init_controller();
+                    self::init_method();
                     break;
             }
         }
     }
     public static function run($config){
-        self::init_page();
         self::$config=$config;
         self::init_view();
+        self::init_db();
         self::init_page();
         C(self::$controller,self::$method);
     }

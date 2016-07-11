@@ -17,6 +17,8 @@ class VIEW
         foreach($config as $key=>$value){
             self::$view->$key=$value;
         }
+        global $assigns;
+        self::assign($assigns);
     }
     static function assign($arr){
         if(is_array($arr)){
