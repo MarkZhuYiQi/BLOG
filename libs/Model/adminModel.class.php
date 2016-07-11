@@ -7,11 +7,12 @@
  */
 
 namespace libs\Model;
-
+use framework\libs\core as core;
 
 class adminModel
 {
-    function index(){
-        return "hello World!";
+    function findOneByUsername($username){
+        $sql="SELECT `id`,`password`,`username` FROM `blog_user` WHERE `username`='{$username}'";
+        return core\DB::findOne($sql);
     }
 }

@@ -41,7 +41,7 @@
         </ul>
         <p class="user">您好，red_026</p>
     </div>
-    <script type="text/javascript" src="{$css_path}/jquery.js"></script>
-    <script type="text/javascript" src="{$css_path}/bootstrap.js"></script>
+    <script type="text/javascript" src="{$js_path}/jquery.js"></script>
+    <script type="text/javascript" src="{$js_path}/bootstrap.js"></script>
 </body>
 </html>
