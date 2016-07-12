@@ -56,7 +56,19 @@ class adminController
         $this->adminDisplay("admin/admin_userList.tpl");
     }
     function modify(){
-
+        if(isset($_GET["id"])){
+            if(is_numeric($_GET["id"])){
+                $id=$_GET["id"];
+            }else{
+                addons\tool::alertBack("user ID error!");
+            }
+        }else{
+            addons\tool::alertBack("does not specify the user!");
+        }
+        $userObj=M("user");
+        $res=$userObj->getOneUserInfo($id);
+        var_dump($res);
+        $this->adminDisplay("admin/admin_modify.tpl");
     }
 
 

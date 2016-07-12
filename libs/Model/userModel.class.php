@@ -16,4 +16,8 @@ class userModel
         $sql="SELECT `id`,`username`,`email`,`face`,`state`,`date` FROM `{$this->table}` ORDER BY `date`";
         return core\DB::findAll($sql);
     }
+    function getOneUserInfo($id){
+        $sql="SELECT `id`,`username`,`email`,`face`,`state`,`date` FROM `{$this->table}` WHERE `id`={$id}";
+        return core\DB::findOne($sql);
+    }
 }

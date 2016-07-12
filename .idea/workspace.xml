@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="login module">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Model/userModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/admin/admin_header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/admin/admin_modify.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" />
+    <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/DB/mysqli.class.php" afterPath="$PROJECT_DIR$/framework/libs/DB/mysqli.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/addons/tool.class.php" afterPath="$PROJECT_DIR$/framework/libs/addons/tool.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/core/DB.class.php" afterPath="$PROJECT_DIR$/framework/libs/core/DB.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller/adminController.class.php" afterPath="$PROJECT_DIR$/libs/Controller/adminController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/admin.css" afterPath="$PROJECT_DIR$/styles/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/admin/admin.tpl" afterPath="$PROJECT_DIR$/tpl/admin/admin.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Model/userModel.class.php" afterPath="$PROJECT_DIR$/libs/Model/userModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/admin/admin_modify.tpl" afterPath="$PROJECT_DIR$/tpl/admin/admin_modify.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" afterPath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" />
     </list>
     <ignored path="BLOG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +30,8 @@
       <file leaf-file-name="adminController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="487">
+              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
                 <element signature="e#122#154#0#PHP" expanded="true" />
               </folding>
@@ -45,24 +39,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_modify.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin_modify.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/admin/admin_modify.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="505">
+              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userModel.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="userModel.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/Model/userModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="270">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding>
-                <marker date="1468334272561" expanded="true" signature="246:320" ph="SELECT `id`,... ##}" />
-                <marker date="1468334272561" expanded="true" signature="246:336" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+                <marker date="1468336536876" expanded="true" signature="246:320" ph="SELECT `id`,... ##}" />
+                <marker date="1468336536876" expanded="true" signature="246:336" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+                <marker date="1468336536876" expanded="true" signature="432:518" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+                <marker date="1468336536876" expanded="true" signature="432:523" ph="SELECT `id`,... ${{$this-&gt;table}}" />
               </folding>
             </state>
           </provider>
@@ -91,8 +87,8 @@
       <file leaf-file-name="admin_userList.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/admin/admin_userList.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="36" column="93" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+            <state relative-caret-position="253">
+              <caret line="36" column="75" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -153,9 +149,10 @@
         <option value="$PROJECT_DIR$/tpl/admin/admin.tpl" />
         <option value="$PROJECT_DIR$/framework/libs/addons/tool.class.php" />
         <option value="$PROJECT_DIR$/tpl/admin/admin_header.html" />
-        <option value="$PROJECT_DIR$/libs/Model/userModel.class.php" />
+        <option value="$PROJECT_DIR$/tpl/admin/admin_modify.tpl" />
         <option value="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" />
         <option value="$PROJECT_DIR$/libs/Controller/adminController.class.php" />
+        <option value="$PROJECT_DIR$/libs/Model/userModel.class.php" />
       </list>
     </option>
   </component>
@@ -567,7 +564,7 @@
       <workItem from="1468156456750" duration="4732000" />
       <workItem from="1468200171826" duration="23665000" />
       <workItem from="1468237930959" duration="13089000" />
-      <workItem from="1468324521651" duration="10718000" />
+      <workItem from="1468324521651" duration="11968000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -611,17 +608,24 @@
       <option name="project" value="LOCAL" />
       <updated>1468252573490</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add usermodule">
+      <created>1468335335139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1468335335139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117058000" />
+    <option name="totallyTimeSpent" value="118308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,7 +659,8 @@
     <MESSAGE value="first commit, prepare to build the homepage." />
     <MESSAGE value="add tranisition effect, login logoff status" />
     <MESSAGE value="login module" />
-    <option name="LAST_COMMIT_MESSAGE" value="login module" />
+    <MESSAGE value="add usermodule" />
+    <option name="LAST_COMMIT_MESSAGE" value="add usermodule" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -896,14 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/admin/admin.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -944,17 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Model/userModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <marker date="1468334272561" expanded="true" signature="246:320" ph="SELECT `id`,... ##}" />
-            <marker date="1468334272561" expanded="true" signature="246:336" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/admin/admin_login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -971,29 +957,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/admin/admin.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/admin/admin_userList.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="36" column="93" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+        <state relative-caret-position="253">
+          <caret line="36" column="75" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/admin/admin_modify.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="487">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding>
             <element signature="e#122#154#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/admin/admin_modify.tpl">
+    <entry file="file://$PROJECT_DIR$/libs/Model/userModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <marker date="1468336536876" expanded="true" signature="246:320" ph="SELECT `id`,... ##}" />
+            <marker date="1468336536876" expanded="true" signature="246:336" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468336536876" expanded="true" signature="432:518" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468336536876" expanded="true" signature="432:523" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -33,8 +33,8 @@
                 <td>{$info.state}</td>
                 <td>{$info.date}</td>
                 <td>
-                    <a href="admin.php?controller=admin&method=modify" class="btn btn-danger">Modify</a>
-                    <a href="admin.php?controller=admin&method=delete" class="btn btn-danger">Delete</a>
+                    <a href="admin.php?controller=admin&method=modify&id={$info.id}" class="btn btn-danger">Modify</a>
+                    <a href="admin.php?controller=admin&method=delete&id={$info.id}" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
             {/foreach}
