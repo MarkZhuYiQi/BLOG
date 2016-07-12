@@ -40,5 +40,19 @@ class mysqli
         }
         return isset($list)?$list:"";
     }
+    function insert($table,$arr)
+    {
+        foreach ($arr as $key => $value) {
+            $value = $this->mysqli->real_escape_string($value);
+            $keysArr[] = "`" . $key . "`";
+            $valuesArr[] = "'" . $value . "'";
+        }
+        $keys = implode(",", $keysArr);
+        $values = implode(",", $valuesArr);
+        $sql = "INSERT INTO {$table} ({$keys}) VALUES({$values})";
+        return $this->query($sql);
+    }
+    function update($table, $arr,$where){
 
+    }
 }

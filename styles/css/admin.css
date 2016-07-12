@@ -25,14 +25,21 @@ header{
     text-align:center;
     border-bottom:1px solid #ccc;
 }
-.nav{
+.function{
+    display:block;
+    float:left;
+    width:100%;
     border-bottom:1px solid #ccc;
 }
-.user{
+.function .nav{
+    float:left;
+}
+.function .user{
     display:block;
     float:right;
     padding-right:15%;
 }
+
 
 
 

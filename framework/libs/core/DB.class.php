@@ -17,19 +17,19 @@ class DB
         self::$db->connect($config);
     }
     public static function query($sql){
-        self::$db->query($sql);
+        return self::$db->query($sql);
     }
     public static function findAll($sql){
         $query=self::$db->query($sql);
-        self::$db->findAll($query);
+        return self::$db->findAll($query);
     }
     public static function findOne($sql){
         $query=self::$db->query($sql);
-        self::$db->findOne($query);
+        return self::$db->findOne($query);
     }
     public static function findResult($sql,$row=0,$field=0){
         $query=self::$db->query($sql);
-        self::$db->findResult($query,$row,$field);
+        return self::$db->findResult($query,$row,$field);
     }
     public static function insert($table,$arr){
         return self::$db->insert($table,$arr);

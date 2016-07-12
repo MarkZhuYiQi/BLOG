@@ -13,14 +13,17 @@ class adminController
 {
     public function __construct(){
         if(!isset($_SESSION["admin"])&&\MVC::$method!="login"){
-            addons\tool::alertLocation("","admin.php?controller=admin&method=login");
+            addons\tool::alertLocation("admin.php?controller=admin&method=login");
         }
     }
     function index(){
-        core\VIEW::display("admin/admin.tpl");
+        $this->adminDisplay("admin/admin.tpl");
     }
-    function login(){
-        if(!isset($_POST['submit'])){
+    function login()
+    {
+        if(isset($_SESSION["admin"])){
+            $this->adminDisplay("admin/admin.tpl");
+        }elseif(!isset($_POST['submit'])) {
             core\VIEW::display("admin/admin_login.html");
         }else{
             $this->checkLogin();
@@ -33,9 +36,33 @@ class adminController
         $username=addslashes($_POST["username"]);
         $password=addslashes($_POST["password"]);
         $authObj=M("auth");
-        if($auth=$authObj->checkAuth($username,$password)){
-            $_SESSION["admin"]=$auth;
-            addons\tool::alertLocation("login success!","admin.php?controller=admin&method=index");
+        if($auth=$authObj->checkAuth($username,sha1($password))){
+            $_SESSION["admin"]=$auth["username"];
+            $this->adminDisplay("admin/admin.tpl");
+
         }
+    }
+    function logout(){
+        if(!isset($_SESSION["admin"])){
+            addons\tool::alertBack("unexpected operation error!");
+        }
+        unset($_SESSION["admin"]);
+        addons\tool::alertLocation("admin.php?controller=admin&method=login");
+    }
+    function userList(){
+        $userObj=M("user");
+        $res=$userObj->getAllUserInfo();
+        core\VIEW::assign(array("allInfo"=>$res));
+        $this->adminDisplay("admin/admin_userList.tpl");
+    }
+    function modify(){
+
+    }
+
+
+
+    function adminDisplay($tpl){
+        core\VIEW::assign(array("admin"=>$_SESSION["admin"]));
+        core\VIEW::display($tpl);
     }
 }
