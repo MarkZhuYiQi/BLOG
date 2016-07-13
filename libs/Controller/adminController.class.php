@@ -12,9 +12,7 @@ use framework\libs\addons as addons;
 class adminController
 {
     public function __construct(){
-        if(!isset($_SESSION["admin"])&&\MVC::$method!="login"){
-            addons\tool::alertLocation("admin.php?controller=admin&method=login");
-        }
+        addons\validate::checkSession();
         $interface=array(
             "show"=>false,
             "add"=>false,
@@ -61,7 +59,7 @@ class adminController
         core\VIEW::assign(array("allInfo"=>$res,"show"=>true));
         $this->adminDisplay("admin/admin_userList.tpl");
     }
-    function modify(){
+    function modifyUser(){
         if(isset($_GET["id"])){
             if(is_numeric($_GET["id"])){
                 $id=$_GET["id"];
@@ -89,7 +87,24 @@ class adminController
         }
         $this->adminDisplay("admin/admin_userList.tpl");
     }
-    function add
+    function deleteUser(){
+
+    }
+    function addArticle(){
+
+    }
+    function modifyArticle(){
+
+    }
+    function deleteArticle(){
+
+    }
+    function audit(){
+
+    }
+    function commentList(){
+
+    }
 
 
     function adminDisplay($tpl){

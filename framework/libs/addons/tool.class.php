@@ -18,7 +18,7 @@ class tool
     public static function alertClose($info){
         echo "<script type='text/javascript'>alert('".$info."');close();</script>";
     }
-    public static function alertLocation($url,$info){
+    public static function alertLocation($url,$info=""){
         if(!empty($info)){
             echo "<script type='text/javascript'>alert('".$info."');location.href='".$url."';</script>";
         }else {

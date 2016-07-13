@@ -41,5 +41,11 @@ class validate
         if(trim($data1)!=trim($data2)){
             return true;
         }
+        return false;
+    }
+    static public function checkSession(){
+        if(!isset($_SESSION["admin"])&&\MVC::$method!="login"){
+            tool::alertLocation("admin.php?controller=admin&method=login");
+        }
     }
 }
