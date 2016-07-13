@@ -15,6 +15,12 @@ class adminController
         if(!isset($_SESSION["admin"])&&\MVC::$method!="login"){
             addons\tool::alertLocation("admin.php?controller=admin&method=login");
         }
+        $interface=array(
+            "show"=>false,
+            "add"=>false,
+            "modify"=>false
+        );
+        core\VIEW::assign($interface);
     }
     function index(){
         $this->adminDisplay("admin/admin.tpl");
@@ -52,7 +58,7 @@ class adminController
     function userList(){
         $userObj=M("user");
         $res=$userObj->getAllUserInfo();
-        core\VIEW::assign(array("allInfo"=>$res));
+        core\VIEW::assign(array("allInfo"=>$res,"show"=>true));
         $this->adminDisplay("admin/admin_userList.tpl");
     }
     function modify(){
@@ -67,13 +73,27 @@ class adminController
         }
         $userObj=M("user");
         $res=$userObj->getOneUserInfo($id);
-        var_dump($res);
-        $this->adminDisplay("admin/admin_modify.tpl");
+        core\VIEW::assign(array("info"=>$res));
+        core\VIEW::assign(array("modify"=>true));
+        $this->adminDisplay("admin/admin_userList.tpl");
     }
-
+    function addUser(){
+        core\VIEW::assign(array("add"=>true));
+        if(isset($_POST["submit"])){
+            if($_POST["password"]!=null&&$_POST["confirmPassword"]!=null){
+                if($_POST["password"]===$_POST["confirmPassword"]){
+                    $addInfo["password"]=sha1($_POST["password"]);
+                }
+            }
+            $addInfo["username"]=$_POST["username"];
+        }
+        $this->adminDisplay("admin/admin_userList.tpl");
+    }
+    function add
 
 
     function adminDisplay($tpl){
+
         core\VIEW::assign(array("admin"=>$_SESSION["admin"]));
         core\VIEW::display($tpl);
     }
