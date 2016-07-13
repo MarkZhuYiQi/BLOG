@@ -23,11 +23,10 @@ class adminController
     function index(){
         $this->adminDisplay("admin/admin.tpl");
     }
-    function login()
-    {
+    function login(){
         if(isset($_SESSION["admin"])){
             $this->adminDisplay("admin/admin.tpl");
-        }elseif(!isset($_POST['submit'])) {
+        }elseif(!isset($_POST['submit'])){
             core\VIEW::display("admin/admin_login.html");
         }else{
             $this->checkLogin();

@@ -1,0 +1,69 @@
+.rightView .alert, .rightView .alert-info{
+    padding:0;
+    background:#fff;
+    border:none;
+}
+.rightView a, .rightView input{
+    font-size:12px;
+}
+.rightView .input-group-addon{
+    background:#D25951;
+    color:#fff;
+}
+.rightView .panel{
+    box-shadow:2px 2px 3px #ccc;
+    margin:8% 0 0 0;
+}
+.rightView .loginModule,.rightView .account{
+    padding:3%;
+}
+.rightView .login .input-group{
+    margin:0 0 5% 0;
+}
+.rightView .loginModule .submit,.rightView .loginModule .register,.rightView .account .logoff{
+    width:45%;
+    font-size:14px;
+}
+.newestNews{
+    margin:4% 0 0 0;
+    box-shadow:2px 2px 3px #ccc;
+}
+.newestNews .badge{
+    background:orangered;
+}
+.rightView .comment{
+    box-shadow:2px 2px 3px #ccc;
+}
+.rightView .comment img{
+    width:40px;
+    height:auto;
+    background:#eee;
+    margin:1% 0;
+}
+.rightView .comment .detail{
+    background:#e2e2e2;
+    display:inline-block;
+    font-size:13px;
+    width:80%;
+    padding:2% 6%;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    margin-left:3%;
+}
+.rightView .navContent{
+    box-shadow:2px 2px 3px #ccc;
+    border:none;
+}
+.rightView .navContent .panel-heading{
+    background:#337AB7;
+}
+.rightView .list{
+    box-shadow:2px 2px 3px #ccc;
+    margin-top:4%;
+}
+.rightView .list .list-group{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
