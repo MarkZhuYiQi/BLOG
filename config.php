@@ -13,6 +13,7 @@ define("URL_PATH",str_replace('\\','/',mb_substr($_SERVER["REQUEST_URI"],0,5)));
 define('CSS_PATH',URL_PATH."/styles/css");
 define('JS_PATH',URL_PATH."/styles/js");
 define('IMG_PATH',URL_PATH."/styles/img");
+define("UPLOAD_PATH",ROOT_PATH."/uploads");
 $assigns=array(
     'url_path'=>URL_PATH,
     'css_path'=>CSS_PATH,

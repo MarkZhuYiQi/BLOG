@@ -84,7 +84,8 @@
 
             <dd>
                 <label for="face">face:</label>
-                <input type="text" class="form-control" name="face" id="face" />
+                <input type="text" class="form-control" name="face" id="face" readonly="readonly" />
+                <input type="button" value="uploadImage" class="btn btn-danger" id="uploadImage" />
             </dd>
             <dd>
                 <label for="face">Authority:</label>
@@ -162,5 +163,6 @@
     {/if}
     <script type="text/javascript" src="{$js_path}/jquery.js"></script>
     <script type="text/javascript" src="{$js_path}/bootstrap.js"></script>
+    <script type="text/javascript" src="{$js_path}/admin_userList.js"></script>
 </body>
 </html>
