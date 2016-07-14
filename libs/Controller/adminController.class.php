@@ -104,7 +104,9 @@ class adminController
     function commentList(){
 
     }
-
+    function upload(){
+        addons\upload::show();
+    }
 
     function adminDisplay($tpl){
 
