@@ -20,8 +20,9 @@ function centerWindow(url,name,width,height){
 function upload(){
     if(!document.getElementById("uploadImage"))return false;
     var button=document.getElementById("uploadImage");
+    var op=document.getElementById("operation");
     button.onclick=function(){
-        centerWindow("../admin/upfile.php?type=face","uploadImage",400,200);
+        centerWindow("../admin/upfile.php?type=face&operation="+op.value,"uploadImage",400,200);
     }
 }
 addLoadEvent(upload);

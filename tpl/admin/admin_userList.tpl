@@ -37,8 +37,9 @@
                 <td>{$info.id}</td>
                 <td>{$info.username}</td>
                 <td>{$info.email}</td>
-                <td>{$info.face}</td>
-                <td>{$info.state}</td>
+                {*<td><a href="{$info.face}">{$info.face}</a></td>*}
+                <td><a href="{$info.face}">click to check</a></td>
+                <td>{$info.authority}</td>
                 <td>{$info.date}</td>
                 <td>
                     <a href="admin.php?controller=admin&method=modifyUser&id={$info.id}" class="btn btn-danger">Modify</a>
@@ -63,15 +64,15 @@
             </dd>
             <dd>
                 <label for="password">Password:</label>
-                <input type="text" class="form-control" placeholder="password" name="password" />
+                <input type="password" class="form-control" placeholder="password" name="password" />
             </dd>
             <dd>
                 <label for="confirmPassword">re-input:</label>
-                <input type="text" class="form-control" placeholder="re-input password" name="confirmPassword" />
+                <input type="password" class="form-control" placeholder="re-input password" name="confirmPassword" />
             </dd>
             <dd>
-                <label for="username">email:</label>
-                <input type="text" class="form-control" placeholder="email" name="email" />
+                <label for="email">email:</label>
+                <input type="email" class="form-control" placeholder="email" name="email" />
             </dd>
             <dd>
                 <label for="question">question</label>
@@ -79,17 +80,18 @@
             </dd>
             <dd>
                 <label for="answer">answer:</label>
-                <input type="text" class="form-control" placeholder="answer" name="answer" />
+                <input type="password" class="form-control" placeholder="answer" name="answer" />
             </dd>
 
             <dd>
                 <label for="face">face:</label>
+                <input type="hidden" id="operation" value="add" />
                 <input type="text" class="form-control" name="face" id="face" readonly="readonly" />
                 <input type="button" value="uploadImage" class="btn btn-danger" id="uploadImage" />
                 <img src="" class="img-thumbnail" alt="" style="display: none;" id="uploadFace" />
             </dd>
             <dd>
-                <label for="face">Authority:</label>
+                <label for="authority">Authority:</label>
                 <div class="radios">
                     <label class="radio-inline">
                         <input type="radio" name="authority" value="1">adminstrator
@@ -115,25 +117,45 @@
     </form>
     {/if}
     {if $modify}
-        <form class="modify" action="admin.php?controller=admin&method=modify" method="post">
+        <form class="modify" action="admin.php?controller=admin&method=addUser" method="post">
             <dl>
                 <dt>
-                <h2>个人资料</h2>
+                <h2>修改用户</h2>
                 </dt>
                 <dd>
                     <label for="username">UserName:</label>
-                    <input type="text" class="form-control" placeholder="username" name="username" value="{$info.username}"/>
+                    <input type="text" class="form-control" placeholder="username" name="username" value="{$info.username}" />
                 </dd>
                 <dd>
-                    <label for="username">email:</label>
-                    <input type="text" class="form-control" placeholder="email" name="email" value="{$info.email}"/>
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" placeholder="password" name="password" />
                 </dd>
+                <dd>
+                    <label for="confirmPassword">re-input:</label>
+                    <input type="password" class="form-control" placeholder="re-input password" name="confirmPassword" />
+                </dd>
+                <dd>
+                    <label for="email">email:</label>
+                    <input type="email" class="form-control" placeholder="email" name="email" value="{$info.email}" />
+                </dd>
+                <dd>
+                    <label for="question">question</label>
+                    <input type="text" class="form-control" placeholder="question" name="question" value="{$info.question}" />
+                </dd>
+                <dd>
+                    <label for="answer">answer:</label>
+                    <input type="password" class="form-control" placeholder="answer" name="answer" value=""/>
+                </dd>
+
                 <dd>
                     <label for="face">face:</label>
-                    <input type="text" class="form-control" name="face" value="{$info.face}"/>
+                    <input type="hidden" id="operation" value="modify" />
+                    <input type="text" class="form-control" name="face" id="face" readonly="readonly" value="{$info.face}" />
+                    <input type="button" value="uploadImage" class="btn btn-danger" id="uploadImage" />
+                    <img src="{$info.face}" class="img-thumbnail" alt="" style="display: block;" id="uploadFace" />
                 </dd>
                 <dd>
-                    <label for="face">Authority:</label>
+                    <label for="authority">Authority:</label>
                     <div class="radios">
                         <label class="radio-inline">
                             <input type="radio" name="authority" value="1">adminstrator
@@ -151,10 +173,6 @@
                             <input type="radio" name="authority" value="5">WANTED
                         </label>
                     </div>
-                </dd>
-                <dd>
-                    <label for="date">Date</label>
-                    <input type="text" readonly="readonly" class="form-control" name="date" value="{$info.date}" />
                 </dd>
                 <dd>
                     <input type="submit" class="btn btn-danger submit" name="submit">

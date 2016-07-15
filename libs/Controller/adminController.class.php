@@ -77,31 +77,31 @@ class adminController
     function addUser(){
         core\VIEW::assign(array("add"=>true));
         if(isset($_POST["submit"])){
-            if(addons\validate::checkNull($_POST["username"]))return false;
-            if(addons\validate::checkLength($_POST["username"],6,"less"))return false;
-            if(addons\validate::checkNull($_POST["password"]))return false;
-            if(addons\validate::checkLength($_POST["password"],6,"less"))return false;
-            if(addons\validate::checkNull($_POST["confirmPassword"]))return false;
-            if(addons\validate::checkLength($_POST["confirmPassword"],6,"less"))return false;
-            if(addons\validate::checkEquals($_POST["confirmPassword"],$_POST["password"]))return false;
-            if(addons\validate::checkNull($_POST["question"]))return false;
-            if(addons\validate::checkLength($_POST["question"],6,"less"))return false;
-            if(addons\validate::checkNull($_POST["answer"]))return false;
-            if(addons\validate::checkLength($_POST["answer"],6,"less"))return false;
-            if(addons\validate::checkNull($_POST["face"]))return false;
-            if(addons\validate::checkNull($_POST["authority"]))return false;
+            if(addons\validate::checkNull($_POST["username"]))addons\tool::alertBack("username could not be null");;
+//            if(addons\validate::checkLength($_POST["username"],6,"less"))addons\tool::alertBack("username could not less than 6");
+            if(addons\validate::checkNull($_POST["password"]))addons\tool::alertBack("password could not be null");
+//            if(addons\validate::checkLength($_POST["password"],6,"less"))addons\tool::alertBack("password could not less than 6");
+            if(addons\validate::checkNull($_POST["confirmPassword"]))addons\tool::alertBack("password could not be null");
+//            if(addons\validate::checkLength($_POST["confirmPassword"],6,"less"))addons\tool::alertBack("password could not less than 6");
+            if(addons\validate::checkEquals($_POST["confirmPassword"],$_POST["password"]))addons\tool::alertBack("password mismatch!");
+            if(addons\validate::checkNull($_POST["question"]))addons\tool::alertBack("question could not be null");
+//            if(addons\validate::checkLength($_POST["question"],6,"less"))addons\tool::alertBack("question could not less than 6");
+            if(addons\validate::checkNull($_POST["answer"]))addons\tool::alertBack("answer could not be null");
+//            if(addons\validate::checkLength($_POST["answer"],6,"less"))addons\tool::alertBack("answer could not be less than 6");
+            if(addons\validate::checkNull($_POST["face"]))addons\tool::alertBack("face could not be null");
+            if(addons\validate::checkNull($_POST["authority"]))addons\tool::alertBack("authority must be selected");
             $addInfo["username"]=$_POST["username"];
             $addInfo["password"]=sha1($_POST["password"]);
             $addInfo["email"]=$_POST["email"];
             $addInfo["question"]=$_POST["question"];
             $addInfo["answer"]=sha1($_POST["answer"]);
             $addInfo["face"]=$_POST["face"];
-            $addInfo["state"]=$_POST["authority"];
-            $addInfo["time"]=date("Y-m-d H:i:s");
+            $addInfo["authority"]=$_POST["authority"];
+            $addInfo["date"]=date("Y-m-d H:i:s");
             $userObj=M("user");
-            $userObj->createNewUser($addInfo);
-
-
+            if($userObj->createNewUser($addInfo)){
+                addons\tool::alertLocation("admin.php?controller=admin&method=userList","create new user success!");
+            }
         }
         $this->adminDisplay("admin/admin_userList.tpl");
     }
@@ -131,5 +131,8 @@ class adminController
 
         core\VIEW::assign(array("admin"=>$_SESSION["admin"]));
         core\VIEW::display($tpl);
+    }
+    function checkUserInfo(){
+
     }
 }
