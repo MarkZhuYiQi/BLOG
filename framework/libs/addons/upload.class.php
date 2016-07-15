@@ -16,9 +16,10 @@ class upload
     private $type;      //图片类型
     private $name;
     private $tmp;
-    private $today;
+    private $todayDir;              //相对根目录的今日目录
+    private $today;                 //今日绝对目录
     private $newName;               //文件名
-    private $uploadFilePath;        //实时文件路径
+    private $uploadFilePath;        //实时文件绝对路径
 
 
     function __construct($file,$maxsize)
@@ -28,7 +29,8 @@ class upload
         $this->type=$_FILES[$file]["type"];
         $this->name=$_FILES[$file]["name"];
         $this->tmp=$_FILES[$file]["tmp_name"];
-        $this->today=UPLOAD_PATH."/".date('Ymd');
+        $this->todayDir="/".date('Ymd');
+        $this->today=UPLOAD_PATH.$this->todayDir;
 
         $this->checkError();
         $this->checkType();
@@ -37,7 +39,15 @@ class upload
         $this->moveUpload();
     }
 
+    function getPath(){
+        $path=$_SERVER["SCRIPT_NAME"];
+        $dir=dirname(dirname($path));
+        var_dump($dir);
+        if($dir=="\\")$dir="/";
+        $linkPath=$dir.UPLOAD_DIR.$this->todayDir."/".$this->newName;
+        return $linkPath;
 
+    }
     function moveUpload(){
         if(is_uploaded_file($this->tmp)){
             if(!move_uploaded_file($this->tmp,$this->uploadFilePath)){
@@ -51,12 +61,12 @@ class upload
     function setNewName(){
         $namesArr=explode(".",$this->name);
         $suffix=$namesArr[count($namesArr)-1];
-        $this->newName=date("YmdHis").mtrand(100,1000).".".$suffix;
+        $this->newName=date("YmdHis").mt_rand(100,1000).".".$suffix;
         $this->uploadFilePath=$this->today."/".$this->newName;
     }
 
     function checkPath(){
-        if(!is_dir($this->path)||!is_writable($this->path)){
+        if(!is_dir(UPLOAD_PATH)||!is_writable(UPLOAD_PATH)){
             if(!mkdir(UPLOAD_PATH,"0777")){
                 tool::alertBack("WARNING!create uploadPath error!");
             }
@@ -67,9 +77,8 @@ class upload
             }
         }
     }
-
     function checkType(){
-        if(!in_array($this->type,$this->type)){
+        if(!in_array($this->type,$this->typeArr)){
             tool::alertBack("upload file type error:".$this->type);
         }
     }

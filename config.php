@@ -13,7 +13,8 @@ define("URL_PATH",str_replace('\\','/',mb_substr($_SERVER["REQUEST_URI"],0,5)));
 define('CSS_PATH',URL_PATH."/styles/css");
 define('JS_PATH',URL_PATH."/styles/js");
 define('IMG_PATH',URL_PATH."/styles/img");
-define("UPLOAD_PATH",ROOT_PATH."/uploads");
+define("UPLOAD_DIR","/uploads");
+define("UPLOAD_PATH",ROOT_PATH.UPLOAD_DIR);
 $assigns=array(
     'url_path'=>URL_PATH,
     'css_path'=>CSS_PATH,
@@ -21,17 +22,6 @@ $assigns=array(
     'img_path'=>IMG_PATH
 );
 date_default_timezone_set('Asia/shanghai');
-/*
-$include_path=get_include_path();
-$include_path.=ROOT_PATH.'\\libs\\Controller\\;';
-$include_path.=ROOT_PATH.'\\libs\\Model\\;';
-$include_path.=ROOT_PATH.'\\libs\\View\\;';
-$include_path.=ROOT_PATH.';';
-set_include_path($include_path);
-function __autoload($classname){
-    require_once $classname.'.class.php';
-}
-*/
 $config=array(
     "viewConfig"=>array(
         "left_delimiter"=>"{",

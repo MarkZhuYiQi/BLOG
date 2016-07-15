@@ -15,4 +15,5 @@ class adminModel
         $sql="SELECT `id`,`password`,`username` FROM `blog_user` WHERE `username`='{$username}'";
         return core\DB::findOne($sql);
     }
+
 }

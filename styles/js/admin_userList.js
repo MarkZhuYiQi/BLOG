@@ -18,7 +18,10 @@ function centerWindow(url,name,width,height){
     window.open(url,name,"height="+height+",width="+width+",top="+top+",left="+left);
 };
 function upload(){
+    if(!document.getElementById("uploadImage"))return false;
     var button=document.getElementById("uploadImage");
-    button.onclick=centerWindow("../tpl/upfile.html","uploadImage",400,100);
+    button.onclick=function(){
+        centerWindow("../admin/upfile.php?type=face","uploadImage",400,200);
+    }
 }
 addLoadEvent(upload);

@@ -77,12 +77,31 @@ class adminController
     function addUser(){
         core\VIEW::assign(array("add"=>true));
         if(isset($_POST["submit"])){
-            if($_POST["password"]!=null&&$_POST["confirmPassword"]!=null){
-                if($_POST["password"]===$_POST["confirmPassword"]){
-                    $addInfo["password"]=sha1($_POST["password"]);
-                }
-            }
+            if(addons\validate::checkNull($_POST["username"]))return false;
+            if(addons\validate::checkLength($_POST["username"],6,"less"))return false;
+            if(addons\validate::checkNull($_POST["password"]))return false;
+            if(addons\validate::checkLength($_POST["password"],6,"less"))return false;
+            if(addons\validate::checkNull($_POST["confirmPassword"]))return false;
+            if(addons\validate::checkLength($_POST["confirmPassword"],6,"less"))return false;
+            if(addons\validate::checkEquals($_POST["confirmPassword"],$_POST["password"]))return false;
+            if(addons\validate::checkNull($_POST["question"]))return false;
+            if(addons\validate::checkLength($_POST["question"],6,"less"))return false;
+            if(addons\validate::checkNull($_POST["answer"]))return false;
+            if(addons\validate::checkLength($_POST["answer"],6,"less"))return false;
+            if(addons\validate::checkNull($_POST["face"]))return false;
+            if(addons\validate::checkNull($_POST["authority"]))return false;
             $addInfo["username"]=$_POST["username"];
+            $addInfo["password"]=sha1($_POST["password"]);
+            $addInfo["email"]=$_POST["email"];
+            $addInfo["question"]=$_POST["question"];
+            $addInfo["answer"]=sha1($_POST["answer"]);
+            $addInfo["face"]=$_POST["face"];
+            $addInfo["state"]=$_POST["authority"];
+            $addInfo["time"]=date("Y-m-d H:i:s");
+            $userObj=M("user");
+            $userObj->createNewUser($addInfo);
+
+
         }
         $this->adminDisplay("admin/admin_userList.tpl");
     }

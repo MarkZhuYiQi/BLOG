@@ -20,4 +20,9 @@ class userModel
         $sql="SELECT `id`,`username`,`email`,`face`,`state`,`date` FROM `{$this->table}` WHERE `id`={$id}";
         return core\DB::findOne($sql);
     }
+    function createNewUser($info){
+        if(is_array($info)){
+            core\DB::insert("blog_user",$info);
+        }
+    }
 }

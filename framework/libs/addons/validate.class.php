@@ -43,6 +43,20 @@ class validate
         }
         return false;
     }
+    static public function checkEmail($data){
+        $pattern='/([\w\.\-]+)@([\w\-\.]).([a-zA-Z]+)$/';
+        if(!preg_match($pattern,$data,$matches)){
+            return true;
+        }
+        return false;
+    }
+    static public function checkNum($data){
+        if(!is_numeric($data)){
+            return true;
+        }
+        return false;
+    }
+
     static public function checkSession(){
         if(!isset($_SESSION["admin"])&&\MVC::$method!="login"){
             tool::alertLocation("admin.php?controller=admin&method=login");

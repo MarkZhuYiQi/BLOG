@@ -101,3 +101,16 @@ header{
 .modify .radios{
     display:inline-block;
 }
+.modify #uploadImage{
+    width:120px;
+    outline:none;
+}
+.modify #uploadFace{
+    display:inline-block;
+    position:relative;
+    /*height:150px;*/
+    /*width:150px;*/
+    margin-top:1%;
+    margin-left:30%;
+}
+

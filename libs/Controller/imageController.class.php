@@ -1,0 +1,42 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: SZL4ZSY
+ * Date: 7/15/2016
+ * Time: 1:09 PM
+ */
+
+namespace libs\Controller;
+use framework\libs\core as core;
+use framework\libs\addons as addons;
+
+class imageController
+{
+    public function __construct()
+    {
+        addons\validate::checkSession();
+    }
+
+    public function upload()
+    {
+        if (isset($_POST["send"])) {
+            switch ($_POST["type"]) {
+                case "face":
+                    $width = 150;
+                    $height = 150;
+                    $info = "face upload success!";
+                    break;
+                default:
+                    addons\tool::alertBack("upload illegal opertaion!");
+            }
+            $upload = new addons\upload("pic", $_POST["MAX_FILE_SIZE"]);
+            $path = $upload->getPath();
+            $thumbnail=new addons\image($path);
+            $thumbnail->getThumb($width,$height);
+            $thumbnail->out();
+            addons\tool::alertOpenClose($info, $path);
+        } else {
+            addons\tool::alertBack("file size overflow or other errors!");
+        }
+    }
+}

@@ -7,10 +7,11 @@
  */
 use framework\libs\core as core;
 error_reporting(E_ALL&~E_DEPRECATED);
-require_once dirname(__FILE__)."/include.inc.php";
-foreach($paths as $key =>$value){
-    require_once "$value";
-}
+require_once dirname(__FILE__) . "/loader.php";
+//两种方法都可以用于自动加载
+spl_autoload_register("\\loader::load");
+//spl_autoload_register(array("\\loader","load"));
+
 class MVC{
     public static $controller;
     public static $method;

@@ -52,7 +52,7 @@
     {/if}
 
     {if $add}
-    <form class="modify" action="admin.php?controller=admin&method=modify" method="post">
+    <form class="modify" action="admin.php?controller=admin&method=addUser" method="post">
         <dl>
             <dt>
             <h2>添加用户</h2>
@@ -86,6 +86,7 @@
                 <label for="face">face:</label>
                 <input type="text" class="form-control" name="face" id="face" readonly="readonly" />
                 <input type="button" value="uploadImage" class="btn btn-danger" id="uploadImage" />
+                <img src="" class="img-thumbnail" alt="" style="display: none;" id="uploadFace" />
             </dd>
             <dd>
                 <label for="face">Authority:</label>
