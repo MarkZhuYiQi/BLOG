@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Controller/controller.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.sql" afterPath="$PROJECT_DIR$/blog.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/DB/mysqli.class.php" afterPath="$PROJECT_DIR$/framework/libs/DB/mysqli.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/addons/page.class.php" afterPath="$PROJECT_DIR$/framework/libs/addons/page.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller/adminController.class.php" afterPath="$PROJECT_DIR$/libs/Controller/adminController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Model/userModel.class.php" afterPath="$PROJECT_DIR$/libs/Model/userModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/js/admin_userList.js" afterPath="$PROJECT_DIR$/styles/js/admin_userList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" afterPath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" />
     </list>
     <ignored path="BLOG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -585,7 +576,7 @@
       <workItem from="1468548606567" duration="24110000" />
       <workItem from="1468576774515" duration="7000" />
       <workItem from="1468585809774" duration="7646000" />
-      <workItem from="1468648258744" duration="26946000" />
+      <workItem from="1468648258744" duration="26967000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -643,11 +634,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468402975933</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add pageclass">
+      <created>1468679890291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1468679890291</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225031000" />
+    <option name="totallyTimeSpent" value="225052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -707,7 +705,8 @@
     <MESSAGE value="add tranisition effect, login logoff status" />
     <MESSAGE value="login module" />
     <MESSAGE value="add usermodule" />
-    <option name="LAST_COMMIT_MESSAGE" value="add usermodule" />
+    <MESSAGE value="add pageclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pageclass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
