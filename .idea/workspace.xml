@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.sql" afterPath="$PROJECT_DIR$/blog.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Model/userModel.class.php" afterPath="$PROJECT_DIR$/libs/Model/userModel.class.php" />
     </list>
     <ignored path="BLOG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,86 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin_userList.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/admin/admin_userList.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/libs/addons/page.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="27" column="87" selection-start-line="27" selection-start-column="87" selection-end-line="27" selection-end-column="87" />
-              <folding>
-                <marker date="1468679373603" expanded="true" signature="1677:1684" ph="«" />
-                <marker date="1468679373603" expanded="true" signature="1836:1843" ph="«" />
-                <marker date="1468679373603" expanded="true" signature="2091:2098" ph="«" />
-                <marker date="1468679373603" expanded="true" signature="2266:2273" ph="»" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_userList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/js/admin_userList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-              <folding>
-                <element signature="e#122#154#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="userModel.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/Model/userModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="399">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="e#118#150#0#PHP" expanded="true" />
-                <marker date="1468679459404" expanded="true" signature="321:400" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-                <marker date="1468679459404" expanded="true" signature="321:401" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-                <marker date="1468679459404" expanded="true" signature="503:538" ph="SELECT count... " />
-                <marker date="1468679459404" expanded="true" signature="503:553" ph="SELECT count... " />
-                <marker date="1468679459404" expanded="true" signature="503:554" ph="SELECT count... ${{$this-&gt;table}}" />
-                <marker date="1468679459404" expanded="true" signature="682:792" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+                <marker date="1468680077681" expanded="true" signature="321:421" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+                <marker date="1468680077681" expanded="true" signature="321:422" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+                <marker date="1468680077681" expanded="true" signature="524:559" ph="SELECT count... " />
+                <marker date="1468680077681" expanded="true" signature="524:574" ph="SELECT count... " />
+                <marker date="1468680077681" expanded="true" signature="524:575" ph="SELECT count... ${{$this-&gt;table}}" />
+                <marker date="1468680077681" expanded="true" signature="703:813" ph="SELECT `id`,... ${{$this-&gt;table}}" />
               </folding>
             </state>
           </provider>
@@ -576,7 +511,7 @@
       <workItem from="1468548606567" duration="24110000" />
       <workItem from="1468576774515" duration="7000" />
       <workItem from="1468585809774" duration="7646000" />
-      <workItem from="1468648258744" duration="26967000" />
+      <workItem from="1468648258744" duration="27193000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -641,11 +576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468679890291</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add pageclass">
+      <created>1468679900360</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1468679900360</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225052000" />
+    <option name="totallyTimeSpent" value="225278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -995,22 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/function/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1029,33 +955,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/js/admin_userList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/admin/admin_userList.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/libs/DB/mysqli.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-          <folding>
-            <marker date="1468655308128" expanded="true" signature="1401:1449" ph="INSERT INTO $... " />
-            <marker date="1468655308128" expanded="true" signature="1830:1852" ph="UPDATE INTO " />
-            <marker date="1468655308128" expanded="true" signature="1830:1868" ph="UPDATE INTO " />
-            <marker date="1468655308128" expanded="true" signature="1830:1875" ph="UPDATE INTO " />
-            <marker date="1468655308128" expanded="true" signature="1830:1883" ph="UPDATE INTO " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,18 +996,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/js/admin_userList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/libs/DB/mysqli.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <marker date="1468655308128" expanded="true" signature="1401:1449" ph="INSERT INTO $... " />
+            <marker date="1468655308128" expanded="true" signature="1830:1852" ph="UPDATE INTO " />
+            <marker date="1468655308128" expanded="true" signature="1830:1868" ph="UPDATE INTO " />
+            <marker date="1468655308128" expanded="true" signature="1830:1875" ph="UPDATE INTO " />
+            <marker date="1468655308128" expanded="true" signature="1830:1883" ph="UPDATE INTO " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libs/Model/userModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="399">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#118#150#0#PHP" expanded="true" />
-            <marker date="1468679459404" expanded="true" signature="321:400" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468679459404" expanded="true" signature="321:401" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468679459404" expanded="true" signature="503:538" ph="SELECT count... " />
-            <marker date="1468679459404" expanded="true" signature="503:553" ph="SELECT count... " />
-            <marker date="1468679459404" expanded="true" signature="503:554" ph="SELECT count... ${{$this-&gt;table}}" />
-            <marker date="1468679459404" expanded="true" signature="682:792" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468680077681" expanded="true" signature="321:421" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468680077681" expanded="true" signature="321:422" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468680077681" expanded="true" signature="524:559" ph="SELECT count... " />
+            <marker date="1468680077681" expanded="true" signature="524:574" ph="SELECT count... " />
+            <marker date="1468680077681" expanded="true" signature="524:575" ph="SELECT count... ${{$this-&gt;table}}" />
+            <marker date="1468680077681" expanded="true" signature="703:813" ph="SELECT `id`,... ${{$this-&gt;table}}" />
           </folding>
         </state>
       </provider>
