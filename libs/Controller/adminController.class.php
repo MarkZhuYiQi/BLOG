@@ -9,7 +9,7 @@
 namespace libs\Controller;
 use framework\libs\core as core;
 use framework\libs\addons as addons;
-class adminController
+class adminController extends controller
 {
     public function __construct(){
         addons\validate::checkSession();
@@ -53,26 +53,58 @@ class adminController
         addons\tool::alertLocation("admin.php?controller=admin&method=login");
     }
     function userList(){
-        $userObj=M("user");
-        $res=$userObj->getAllUserInfo();
+        $this->model=M("user");
+        parent::page($this->model->getCountUser());
+        $res=$this->model->getAllUserInfo();
         core\VIEW::assign(array("allInfo"=>$res,"show"=>true));
         $this->adminDisplay("admin/admin_userList.tpl");
     }
     function modifyUser(){
-        if(isset($_GET["id"])){
-            if(is_numeric($_GET["id"])){
-                $id=$_GET["id"];
-            }else{
-                addons\tool::alertBack("user ID error!");
+        if(!isset($_POST["modify"])){
+            if(isset($_GET["id"])){
+                if(is_numeric($_GET["id"])){
+                    $id=$_GET["id"];
+                }else{
+                    addons\tool::alertBack("user ID error!");
+                }
+            }else {
+                addons\tool::alertBack("does not specify the user!");
             }
+            $userObj=M("user");
+            $res=$userObj->getOneUserInfo($id);
+            core\VIEW::assign(array("info"=>$res));
+            core\VIEW::assign(array("modify"=>true));
+            $this->adminDisplay("admin/admin_userList.tpl");
         }else{
-            addons\tool::alertBack("does not specify the user!");
+            if(addons\validate::checkNull($_POST["username"]))addons\tool::alertBack("username could not be null");;
+//            if(addons\validate::checkLength($_POST["username"],6,"less"))addons\tool::alertBack("username could not less than 6");
+            if(!empty($_POST["password"]||!empty($_POST["confirmPassword"]))){
+                if(addons\validate::checkNull($_POST["password"]))addons\tool::alertBack("password could not be null");
+//            if(addons\validate::checkLength($_POST["password"],6,"less"))addons\tool::alertBack("password could not less than 6");
+                if(addons\validate::checkNull($_POST["confirmPassword"]))addons\tool::alertBack("password could not be null");
+//            if(addons\validate::checkLength($_POST["confirmPassword"],6,"less"))addons\tool::alertBack("password could not less than 6");
+                if(addons\validate::checkEquals($_POST["confirmPassword"],$_POST["password"]))addons\tool::alertBack("password mismatch!");
+                $addInfo["password"]=sha1($_POST["password"]);
+            }
+            if(addons\validate::checkNull($_POST["question"]))addons\tool::alertBack("question could not be null");
+//            if(addons\validate::checkLength($_POST["question"],6,"less"))addons\tool::alertBack("question could not less than 6");
+            if(!empty($_POST["answer"])){
+                if(addons\validate::checkNull($_POST["answer"]))addons\tool::alertBack("answer could not be null");
+//            if(addons\validate::checkLength($_POST["answer"],6,"less"))addons\tool::alertBack("answer could not be less than 6");
+                $addInfo["answer"]=sha1($_POST["answer"]);
+            }
+            if(addons\validate::checkNull($_POST["face"]))addons\tool::alertBack("face could not be null");
+            if(addons\validate::checkNull($_POST["authority"]))addons\tool::alertBack("authority must be selected");
+            $addInfo["username"]=$_POST["username"];
+            $addInfo["email"]=$_POST["email"];
+            $addInfo["question"]=$_POST["question"];
+            $addInfo["face"]=$_POST["face"];
+            $addInfo["authority"]=$_POST["authority"];
+            $userObj=M("user");
+            if($userObj->modifyUserInfo($addInfo,$where)){
+                addons\tool::alertLocation("admin.php?controller=admin&method=userList","update user success!");
+            }
         }
-        $userObj=M("user");
-        $res=$userObj->getOneUserInfo($id);
-        core\VIEW::assign(array("info"=>$res));
-        core\VIEW::assign(array("modify"=>true));
-        $this->adminDisplay("admin/admin_userList.tpl");
     }
     function addUser(){
         core\VIEW::assign(array("add"=>true));

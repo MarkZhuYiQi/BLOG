@@ -52,7 +52,16 @@ class mysqli
         $sql = "INSERT INTO {$table} ({$keys}) VALUES({$values})";
         return $this->query($sql);
     }
-    function update($table, $arr,$where){
-
+    function update($table, $arr,$where)
+    {
+        if(is_array($arr)){
+            foreach($arr as $key=>$value) {
+                $value = $this->mysqli->real_escape_string($value);
+                $string[] = "`" . $key . "`='" . $value . "'";
+            }
+            $keysAndValues=implode(",",$string);
+        }
+        $sql="UPDATE `{$table}` SET {$keysAndValues} WHERE {$where}";
+        return $this->query($sql);
     }
 }

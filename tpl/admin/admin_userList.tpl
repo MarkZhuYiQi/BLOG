@@ -42,13 +42,19 @@
                 <td>{$info.authority}</td>
                 <td>{$info.date}</td>
                 <td>
-                    <a href="admin.php?controller=admin&method=modifyUser&id={$info.id}" class="btn btn-danger">Modify</a>
-                    <a href="admin.php?controller=admin&method=deleteUser&id={$info.id}" class="btn btn-danger">Delete</a>
+                    <a href="admin.php?controller=admin&method=modifyUser&id={$info.id}" class="btn btn-danger btn-xs">Modify</a>
+                    <a href="admin.php?controller=admin&method=deleteUser&id={$info.id}" class="btn btn-danger btn-xs">Delete</a>
                 </td>
             </tr>
             {/foreach}
             </tbody>
         </table>
+
+        <div class="page text-center">
+            {if $showPage}
+                {$nav}
+            {/if}
+        </div>
     </div>
     {/if}
 
@@ -117,7 +123,8 @@
     </form>
     {/if}
     {if $modify}
-        <form class="modify" action="admin.php?controller=admin&method=addUser" method="post">
+        <form class="modify" action="admin.php?controller=admin&method=modifyUser" method="post">
+            <input type="hidden" name="id" value="{$info.id}">
             <dl>
                 <dt>
                 <h2>修改用户</h2>
@@ -156,7 +163,8 @@
                 </dd>
                 <dd>
                     <label for="authority">Authority:</label>
-                    <div class="radios">
+                    <div class="radios" id="authority">
+                        <input type="hidden" value="{$info.authority}" id="radiosValue">
                         <label class="radio-inline">
                             <input type="radio" name="authority" value="1">adminstrator
                         </label>
@@ -175,7 +183,7 @@
                     </div>
                 </dd>
                 <dd>
-                    <input type="submit" class="btn btn-danger submit" name="submit">
+                    <input type="submit" class="btn btn-danger submit" name="modify" value="modify">
                 </dd>
             </dl>
         </form>
