@@ -190,6 +190,7 @@
     {/if}
     <script type="text/javascript" src="{$js_path}/jquery.js"></script>
     <script type="text/javascript" src="{$js_path}/bootstrap.js"></script>
+    <script type="text/javascript" src="{$js_path}/global.js"></script>
     <script type="text/javascript" src="{$js_path}/admin_userList.js"></script>
 </body>
 </html>

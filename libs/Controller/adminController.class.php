@@ -42,7 +42,8 @@ class adminController extends controller
         if($auth=$authObj->checkAuth($username,sha1($password))){
             $_SESSION["admin"]=$auth["username"];
             $this->adminDisplay("admin/admin.tpl");
-
+        }else{
+            addons\tool::alertBack("username or password error!");
         }
     }
     function logout(){
@@ -58,6 +59,23 @@ class adminController extends controller
         $res=$this->model->getAllUserInfo();
         core\VIEW::assign(array("allInfo"=>$res,"show"=>true));
         $this->adminDisplay("admin/admin_userList.tpl");
+    }
+    function deleteUser(){
+        if(isset($_GET["id"])){
+            if(is_numeric($_GET["id"])&&$_GET["id"]>0){
+                $where="`id`={$_GET['id']}";
+                $userObj=M("user");
+                if($userObj->deleteUser($where)){
+                    addons\tool::alertLocation("admin.php?controller=admin&method=userList","delete successful!");
+                }else{
+                    addons\tool::alertBack("delete failed!");
+                }
+            }else{
+                addons\tool::alertBack("id illegal!");
+            }
+        }else{
+            addons\tool::alertBack("ID does not exist!");
+        }
     }
     function modifyUser(){
         if(!isset($_POST["modify"])){
@@ -136,9 +154,6 @@ class adminController extends controller
             }
         }
         $this->adminDisplay("admin/admin_userList.tpl");
-    }
-    function deleteUser(){
-
     }
     function addArticle(){
 

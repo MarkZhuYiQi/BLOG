@@ -64,4 +64,16 @@ class mysqli
         $sql="UPDATE `{$table}` SET {$keysAndValues} WHERE {$where}";
         return $this->query($sql);
     }
+    function delete($table,$where){
+        if(is_array($where)){
+            foreach($where as $key=>$value){
+                $arr[]="`$key`='$value'";
+            }
+            $string=implode(",",$arr);
+        }else{
+            $string=$where;
+        }
+        $sql="DELETE FROM `{$table}` WHERE {$string} {$this->limit}";
+        return $this->query($sql);
+    }
 }

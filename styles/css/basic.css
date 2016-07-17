@@ -2,6 +2,8 @@ h1,h2,h3,h4,h5,h6{
     font-weight:normal;
     color:#333;
     line-height:1.5 !important;
+    /*margin:0;*/
+    /*padding:0;*/
 }
 body{
     font-family:"微软雅黑", "Microsoft YaHei", 'Helvetica Neue', Avenir, Helvetica, 'Lantinghei SC', "Hiragino Sans GB",  "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif !important;
@@ -20,6 +22,9 @@ a,input,button{
 }
 a,a:hover{
     color:#666;
+}
+.clear{
+    clear:both;
 }
 .navbar{
     margin-bottom:0;

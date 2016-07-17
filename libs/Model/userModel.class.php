@@ -42,4 +42,7 @@ class userModel
             return false;
         }
     }
+    function deleteUser($where){
+        return core\DB::delete($this->table,$where);
+    }
 }
