@@ -11,6 +11,7 @@ use framework\libs\core as core;
 use framework\libs\addons as addons;
 class articleModel
 {
+    public $limit;
     public $table="blog_article";
     function getCountArticle(){
         $sql="SELECT count(`id`) as `total` FROM `{$this->table}`";
@@ -19,6 +20,10 @@ class articleModel
     }
     function getAllArticle(){
         $sql="SELECT `id`,`title`,`author`,`from`,`type`,`keyword`,`content`,`thumbnail`,`info`,`readlimit`,`comment`,`date` FROM `{$this->table}` ORDER BY `date` DESC $this->limit";
+        return core\DB::findAll($sql);
+    }
+    function getAllArticleFront(){
+        $sql="SELECT `id`,`title`,`date`,`readcount`,`info`,`thumbnail` FROM {$this->table} ORDER BY `date` DESC $this->limit";
         return core\DB::findAll($sql);
     }
     function createNewArticle($info){

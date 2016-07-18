@@ -21,6 +21,7 @@ class adminController extends controller
         core\VIEW::assign($interface);
     }
     function index(){
+        $this->showArticleListFront();
         $this->adminDisplay("admin/admin.tpl");
     }
     function login(){
@@ -254,6 +255,13 @@ class adminController extends controller
         }
     }
     function deleteArticle(){
+
+    }
+
+    /**
+     * frontpage
+     */
+    function showArticle(){
 
     }
     function audit(){

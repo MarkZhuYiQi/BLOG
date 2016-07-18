@@ -100,6 +100,9 @@
                     </div>
                 </section>
                 <section class="newsList">
+                    {foreach $articleInfo as $Info}
+                        {$Info.id}{$Info.thumbnail}
+                    {/foreach}
                     <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
                     <div class="lgroup text-center">
                         <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 108</button></button>
