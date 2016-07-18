@@ -155,11 +155,103 @@ class adminController extends controller
         }
         $this->adminDisplay("admin/admin_userList.tpl");
     }
+    function articleList(){
+        $this->model=M("article");
+        parent::page($this->model->getCountArticle());
+        $res=$this->model->getAllArticle();
+        core\VIEW::assign(array("allInfo"=>$res,"show"=>true));
+        core\VIEW::assign(array("show"=>true));
+        $this->adminDisplay("admin/admin_article.tpl");
+    }
     function addArticle(){
-
+        if(isset($_POST["submit"])){
+            if(addons\validate::checkNull($_POST["title"]))addons\tool::alertBack("title could not be null");;
+//            if(addons\validate::checkLength($_POST["title"],6,"less"))addons\tool::alertBack("title could not less than 6");
+//            if(addons\validate::checkLength($_POST["title"],25,"more"))addons\tool::alertBack("title could not more than 25");
+            if(addons\validate::checkNull($_POST["author"]))addons\tool::alertBack("author could not be null");
+//            if(addons\validate::checkLength($_POST["author"],20,"more"))addons\tool::alertBack("password could not more than 20");
+            if(addons\validate::checkNull($_POST["from"]))addons\tool::alertBack("from could not be null");
+//            if(addons\validate::checkLength($_POST["from"],20,"more"))addons\tool::alertBack("from could not more than 20");
+            if(addons\validate::checkNull($_POST["type"]))addons\tool::alertBack("type could not be null");
+//            if(addons\validate::checkLength($_POST["type"],30,"more"))addons\tool::alertBack("type could not less than 30");
+            if(addons\validate::checkNull($_POST["keyword"]))addons\tool::alertBack("keyword could not be null");
+//            if(addons\validate::checkLength($_POST["keyword"],30,"more"))addons\tool::alertBack("keyword could not be more than 30");
+            if(addons\validate::checkNull($_POST["content"]))addons\tool::alertBack("content could not be null");
+            if(addons\validate::checkNull($_POST["thumbnail"]))addons\tool::alertBack("thumbnail could not be null");
+            if(addons\validate::checkNull($_POST["info"]))addons\tool::alertBack("info could not be null");
+            if(addons\validate::checkLength($_POST["info"],200,"more"))addons\tool::alertBack("info could not more than 200");
+            if(addons\validate::checkNull($_POST["readlimit"]))addons\tool::alertBack("readlimit could not be null");
+            if(addons\validate::checkNull($_POST["comment"]))addons\tool::alertBack("Comment could not be null");
+            $addInfo["title"]=$_POST["title"];
+            $addInfo["author"]=$_POST["author"];
+            $addInfo["from"]=$_POST["from"];
+            $addInfo["type"]=$_POST["type"];
+            $addInfo["keyword"]=$_POST["keyword"];
+            $addInfo["content"]=$_POST["content"];
+            $addInfo["thumbnail"]=$_POST["thumbnail"];
+            $addInfo["info"]=$_POST["info"];
+            $addInfo["readlimit"]=$_POST["readlimit"];
+            $addInfo["comment"]=$_POST["comment"];
+            $addInfo["date"]=date("Y-m-d H:i:s");
+            $artObj=M("article");
+            if($artObj->createNewArticle($addInfo)){
+                addons\tool::alertLocation("admin.php?controller=admin&method=ArticleList","create new article success!");
+            }
+        }
+        core\VIEW::assign(array("add"=>true));
+        $this->adminDisplay("admin/admin_article.tpl");
     }
     function modifyArticle(){
-
+        if(!isset($_POST["modify"])){
+            if(isset($_GET["id"])){
+                if(is_numeric($_GET["id"])){
+                    $id=$_GET["id"];
+                }else{
+                    addons\tool::alertBack("article ID error!");
+                }
+            }else {
+                addons\tool::alertBack("does not specify the article!");
+            }
+            $artObj=M("article");
+            $res=$artObj->getOneArticle($id);
+            core\VIEW::assign(array("info"=>$res));
+            core\VIEW::assign(array("modify"=>true));
+            $this->adminDisplay("admin/admin_article.tpl");
+        }else{
+            if(addons\validate::checkNull($_POST["title"]))addons\tool::alertBack("title could not be null");;
+//            if(addons\validate::checkLength($_POST["title"],6,"less"))addons\tool::alertBack("title could not less than 6");
+//            if(addons\validate::checkLength($_POST["title"],25,"more"))addons\tool::alertBack("title could not more than 25");
+            if(addons\validate::checkNull($_POST["author"]))addons\tool::alertBack("author could not be null");
+//            if(addons\validate::checkLength($_POST["author"],20,"more"))addons\tool::alertBack("password could not more than 20");
+            if(addons\validate::checkNull($_POST["from"]))addons\tool::alertBack("from could not be null");
+//            if(addons\validate::checkLength($_POST["from"],20,"more"))addons\tool::alertBack("from could not more than 20");
+            if(addons\validate::checkNull($_POST["type"]))addons\tool::alertBack("type could not be null");
+//            if(addons\validate::checkLength($_POST["type"],30,"more"))addons\tool::alertBack("type could not less than 30");
+            if(addons\validate::checkNull($_POST["keyword"]))addons\tool::alertBack("keyword could not be null");
+//            if(addons\validate::checkLength($_POST["keyword"],30,"more"))addons\tool::alertBack("keyword could not be more than 30");
+            if(addons\validate::checkNull($_POST["content"]))addons\tool::alertBack("content could not be null");
+            if(addons\validate::checkNull($_POST["thumbnail"]))addons\tool::alertBack("thumbnail could not be null");
+            if(addons\validate::checkNull($_POST["info"]))addons\tool::alertBack("info could not be null");
+            if(addons\validate::checkLength($_POST["info"],200,"more"))addons\tool::alertBack("info could not more than 200");
+            if(addons\validate::checkNull($_POST["readlimit"]))addons\tool::alertBack("readlimit could not be null");
+            if(addons\validate::checkNull($_POST["comment"]))addons\tool::alertBack("Comment could not be null");
+            $addInfo["title"]=$_POST["title"];
+            $addInfo["author"]=$_POST["author"];
+            $addInfo["from"]=$_POST["from"];
+            $addInfo["type"]=$_POST["type"];
+            $addInfo["keyword"]=$_POST["keyword"];
+            $addInfo["content"]=$_POST["content"];
+            $addInfo["thumbnail"]=$_POST["thumbnail"];
+            $addInfo["info"]=$_POST["info"];
+            $addInfo["readlimit"]=$_POST["readlimit"];
+            $addInfo["comment"]=$_POST["comment"];
+            $addInfo["date"]=date("Y-m-d H:i:s");
+            var_dump($addInfo);
+//            $artObj=M("article");
+//            if($artObj->modifyArticle($addInfo)){
+//                addons\tool::alertLocation("admin.php?controller=admin&method=ArticleList","modify article success!");
+//            }
+        }
     }
     function deleteArticle(){
 

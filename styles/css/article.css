@@ -29,6 +29,7 @@
 .hotComment h3{
     margin:0;
     color:#fff;
+    font-size:18px;
 }
 .hotComment .img-circle{
     float:left;
@@ -55,7 +56,7 @@
     font-weight:bold;
 }
 .hotComment .detail{
-    background:lightgreen;
+    /*background:lightgreen;*/
     display:inline-block;
     font-size:13px;
     width:90%;
@@ -65,10 +66,17 @@
     border-radius:5px;
     margin-left:3%;
 }
+.hotComment .detail a{
+    color:#333;
+    font-size:15px;
+}
 .hotComment .reply a{
     display:block;
     float:right;
     margin-right:2%;
+}
+.hotComment .reply a:hover{
+    color:#D25951;
 }
 .comment{
     background:#fff;

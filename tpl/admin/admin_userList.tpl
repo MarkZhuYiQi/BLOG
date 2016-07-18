@@ -66,7 +66,7 @@
             </dt>
             <dd>
                 <label for="username">UserName:</label>
-                <input type="text" class="form-control" placeholder="username" name="username" />
+                <input type="text" class="form-control" placeholder="UserName" name="username" />
             </dd>
             <dd>
                 <label for="password">Password:</label>
@@ -92,9 +92,9 @@
             <dd>
                 <label for="face">face:</label>
                 <input type="hidden" id="operation" value="add" />
-                <input type="text" class="form-control" name="face" id="face" readonly="readonly" />
+                <input type="text" class="form-control" name="face" id="uploadPath" readonly="readonly" />
                 <input type="button" value="uploadImage" class="btn btn-danger" id="uploadImage" />
-                <img src="" class="img-thumbnail" alt="" style="display: none;" id="uploadFace" />
+                <img src="" class="img-thumbnail" alt="" style="display: none;" id="thumbnail" />
             </dd>
             <dd>
                 <label for="authority">Authority:</label>
@@ -157,9 +157,10 @@
                 <dd>
                     <label for="face">face:</label>
                     <input type="hidden" id="operation" value="modify" />
-                    <input type="text" class="form-control" name="face" id="face" readonly="readonly" value="{$info.face}" />
+
+                    <input type="text" class="form-control" name="face" id="uploadPath" readonly="readonly" value="{$info.face}" />
                     <input type="button" value="uploadImage" class="btn btn-danger" id="uploadImage" />
-                    <img src="{$info.face}" class="img-thumbnail" alt="" style="display: block;" id="uploadFace" />
+                    <img src="{$info.face}" class="img-thumbnail" alt="" style="display: none;" id="thumbnail" />
                 </dd>
                 <dd>
                     <label for="authority">Authority:</label>

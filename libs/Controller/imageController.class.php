@@ -26,6 +26,11 @@ class imageController
                     $height = 150;
                     $info = "face upload success!";
                     break;
+                case "article":
+                    $width=620;
+                    $height=350;
+                    $info="thumbnail upload success!";
+                    break;
                 default:
                     addons\tool::alertBack("upload illegal opertaion!");
             }
@@ -38,5 +43,18 @@ class imageController
         } else {
             addons\tool::alertBack("file size overflow or other errors!");
         }
+    }
+    public function ckeUpload(){
+        $width=620;
+        $height=350;
+        //这里的上传名称upload是上传的名字
+        $upload = new addons\upload("upload", $_POST["MAX_FILE_SIZE"]);
+        $ckefn = $_GET['CKEditorFuncNum'];
+        $path = $upload->getPath();
+        $thumbnail=new addons\image($path);
+        $thumbnail->getThumb($width,$height);
+        $thumbnail->out();
+        echo "<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction($ckefn,\"$path\",'图片上传成功！');</script>";
+        exit();
     }
 }

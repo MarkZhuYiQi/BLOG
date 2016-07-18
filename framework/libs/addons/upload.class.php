@@ -12,7 +12,7 @@ namespace framework\libs\addons;
 class upload
 {
     private $error;     //错误代码
-    private $typeArr=array("image/jpeg","image/pjpeg","image/png","img/x-png","img/gif");
+    private $typeArr=array("image/jpeg","image/pjpeg","image/png","image/x-png","image/gif");
     private $type;      //图片类型
     private $name;
     private $tmp;
@@ -42,7 +42,6 @@ class upload
     function getPath(){
         $path=$_SERVER["SCRIPT_NAME"];
         $dir=dirname(dirname($path));
-        var_dump($dir);
         if($dir=="\\")$dir="/";
         $linkPath=$dir.UPLOAD_DIR.$this->todayDir."/".$this->newName;
         return $linkPath;

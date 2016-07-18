@@ -63,7 +63,7 @@ header{
 }
 
 .userInfo{
-    width:80%;
+    width:90%;
     margin:100px auto;
 }
 .userInfo .table{
@@ -101,11 +101,11 @@ header{
 .modify .radios{
     display:inline-block;
 }
-.modify #uploadImage{
+.modify #uploadImage, .modify #uploadArticleImage{
     width:120px;
     outline:none;
 }
-.modify #uploadFace{
+.modify #uploadFace, .modify #uploadThumbnail{
     display:inline-block;
     position:relative;
     /*height:150px;*/
@@ -113,4 +113,12 @@ header{
     margin-top:1%;
     margin-left:30%;
 }
-
+#TextArea1{
+    display:block;
+    margin:0 auto;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    resize: none;
+    height:150px;
+}

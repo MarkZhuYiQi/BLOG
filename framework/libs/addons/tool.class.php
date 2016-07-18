@@ -28,9 +28,9 @@ class tool
     public static function alertOpenClose($info,$path){
         echo "<script type='text/javascript'>
 alert('$info');
-opener.document.getElementById('face').value='$path';
-opener.document.getElementById('uploadFace').src='$path';
-opener.document.getElementById('uploadFace').style.display='block';
+opener.document.getElementById('uploadPath').value='$path';
+opener.document.getElementById('thumbnail').src='$path';
+opener.document.getElementById('thumbnail').style.display='block';
 window.close();
 </script>";
     }

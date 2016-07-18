@@ -1,12 +1,12 @@
 /**
  * Created by Administrator on 2016/7/14.
  */
-function uploadUser(){
+function uploadArticle(){
     if(!document.getElementById("uploadImage"))return false;
     var button=document.getElementById("uploadImage");
     var op=document.getElementById("operation");
     button.onclick=function(){
-        centerWindow("../admin/upfile.php?type=face&operation="+op.value,"uploadImage",400,200);
+        centerWindow("../admin/upfile.php?type=article&operation="+op.value,"uploadImage",400,200);
     }
 }
 function checkAuth(){
@@ -22,4 +22,4 @@ function checkAuth(){
 }
 
 addLoadEvent(checkAuth);
-addLoadEvent(uploadUser);
+addLoadEvent(uploadArticle);

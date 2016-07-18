@@ -14,7 +14,7 @@ class userModel
     public $table="blog_user";
     public $limit;       //数据库分页用
     function getAllUserInfo(){
-        echo $sql="SELECT `id`,`username`,`email`,`face`,`authority`,`date` FROM `{$this->table}` ORDER BY `date` DESC $this->limit";
+        $sql="SELECT `id`,`username`,`email`,`face`,`authority`,`date` FROM `{$this->table}` ORDER BY `date` DESC $this->limit";
         return core\DB::findAll($sql);
     }
     function getCountUser(){

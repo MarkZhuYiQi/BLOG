@@ -1,6 +1,11 @@
 /**
  * Created by Administrator on 2016/7/17.
  */
+function centerWindow(url,name,width,height){
+    var left=(screen.width-width)/2;
+    var top=(screen.top-height)/2;
+    window.open(url,name,"height="+height+",width="+width+",top="+top+",left="+left);
+};
 function addLoadEvent(func){
     var oldonload=window.onload;
     if(typeof(window.onload)!="function"){
@@ -22,7 +27,6 @@ function addClass(element,value){
         element.className=newClassName;
     }
 }
-
 function insertAfter(newElement,targetElement){
     var parent=targetElement.parentNode;
     if(parent.lastChild==targetElement){
@@ -31,4 +35,5 @@ function insertAfter(newElement,targetElement){
         parent.insertBefore(newElement,targetElement.nextSibling);
     }
 }
+
 
