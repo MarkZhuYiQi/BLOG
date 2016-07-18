@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160718/20160718160735714.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Model/articleModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/js/admin_articleList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/admin/admin_article.tpl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/Model/contentModel.class.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckeditor/config.js" afterPath="$PROJECT_DIR$/ckeditor/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/addons/tool.class.php" afterPath="$PROJECT_DIR$/framework/libs/addons/tool.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/libs/addons/upload.class.php" afterPath="$PROJECT_DIR$/framework/libs/addons/upload.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller/adminController.class.php" afterPath="$PROJECT_DIR$/libs/Controller/adminController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller/imageController.class.php" afterPath="$PROJECT_DIR$/libs/Controller/imageController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Model/userModel.class.php" afterPath="$PROJECT_DIR$/libs/Model/userModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/admin.css" afterPath="$PROJECT_DIR$/styles/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/article.css" afterPath="$PROJECT_DIR$/styles/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/sidebar.css" afterPath="$PROJECT_DIR$/styles/css/sidebar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/js/admin_userList.js" afterPath="$PROJECT_DIR$/styles/js/admin_userList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/js/global.js" afterPath="$PROJECT_DIR$/styles/js/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" afterPath="$PROJECT_DIR$/tpl/admin/admin_userList.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/article.html" afterPath="$PROJECT_DIR$/tpl/article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.sql" afterPath="$PROJECT_DIR$/blog.sql" />
     </list>
     <ignored path="BLOG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adminController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
+            <state relative-caret-position="1251">
+              <caret line="248" column="31" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
               <folding>
                 <element signature="e#122#154#0#PHP" expanded="true" />
               </folding>
@@ -71,8 +54,8 @@
       <file leaf-file-name="admin_article.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/admin/admin_article.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
-              <caret line="175" column="108" selection-start-line="175" selection-start-column="108" selection-end-line="175" selection-end-column="108" />
+            <state relative-caret-position="115">
+              <caret line="128" column="46" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#dd#8;n#dl#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -80,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleModel.class.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articleModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/Model/articleModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
+            <state relative-caret-position="368">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="e#115#147#0#PHP" expanded="true" />
                 <marker date="1468834988087" expanded="true" signature="286:321" ph="SELECT cound... $" />
@@ -97,16 +80,6 @@
                 <marker date="1468834988087" expanded="true" signature="990:1143" ph="SELECT `id`,... ${{$this-&gt;table}}" />
                 <marker date="1468834988087" expanded="true" signature="990:1144" ph="SELECT `id`,... ${{$this-&gt;table}}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ckeditor/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -580,7 +553,7 @@
       <workItem from="1468648258744" duration="27216000" />
       <workItem from="1468719828654" duration="1285000" />
       <workItem from="1468749545118" duration="13494000" />
-      <workItem from="1468805538458" duration="25802000" />
+      <workItem from="1468805538458" duration="26579000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -659,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468680126307</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add articlemodule">
+      <created>1468835035680</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1468835035680</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265882000" />
+    <option name="totallyTimeSpent" value="266659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -724,7 +704,8 @@
     <MESSAGE value="login module" />
     <MESSAGE value="add usermodule" />
     <MESSAGE value="add pageclass" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pageclass" />
+    <MESSAGE value="add articlemodule" />
+    <option name="LAST_COMMIT_MESSAGE" value="add articlemodule" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1086,6 +1067,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/framework/libs/addons/upload.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-796">
+          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ckeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -1094,11 +1083,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/libs/addons/upload.class.php">
+    <entry file="file://$PROJECT_DIR$/tpl/admin/admin_article.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796">
-          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="128" column="46" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#dd#8;n#dl#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/Model/articleModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#115#147#0#PHP" expanded="true" />
+            <marker date="1468834988087" expanded="true" signature="286:321" ph="SELECT cound... $" />
+            <marker date="1468834988087" expanded="true" signature="286:336" ph="SELECT cound... " />
+            <marker date="1468834988087" expanded="true" signature="286:337" ph="SELECT cound... {}" />
+            <marker date="1468834988087" expanded="true" signature="461:615" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468834988087" expanded="true" signature="990:1123" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468834988087" expanded="true" signature="990:1129" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468834988087" expanded="true" signature="990:1135" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468834988087" expanded="true" signature="990:1143" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+            <marker date="1468834988087" expanded="true" signature="990:1144" ph="SELECT `id`,... ${{$this-&gt;table}}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1125,39 +1135,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
+        <state relative-caret-position="1251">
+          <caret line="248" column="31" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
           <folding>
             <element signature="e#122#154#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/admin/admin_article.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="175" column="108" selection-start-line="175" selection-start-column="108" selection-end-line="175" selection-end-column="108" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#dd#8;n#dl#0;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/Model/articleModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="110" selection-start-line="20" selection-start-column="110" selection-end-line="20" selection-end-column="110" />
-          <folding>
-            <element signature="e#115#147#0#PHP" expanded="true" />
-            <marker date="1468834988087" expanded="true" signature="286:321" ph="SELECT cound... $" />
-            <marker date="1468834988087" expanded="true" signature="286:336" ph="SELECT cound... " />
-            <marker date="1468834988087" expanded="true" signature="286:337" ph="SELECT cound... {}" />
-            <marker date="1468834988087" expanded="true" signature="461:615" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468834988087" expanded="true" signature="990:1123" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468834988087" expanded="true" signature="990:1129" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468834988087" expanded="true" signature="990:1135" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468834988087" expanded="true" signature="990:1143" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468834988087" expanded="true" signature="990:1144" ph="SELECT `id`,... ${{$this-&gt;table}}" />
           </folding>
         </state>
       </provider>

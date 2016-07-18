@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 16, 2016 at 04:41 PM
+-- Generation Time: Jul 18, 2016 at 11:55 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,6 +19,37 @@ SET time_zone = "+00:00";
 --
 -- Database: `blog`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blog_article`
+--
+
+CREATE TABLE IF NOT EXISTS `blog_article` (
+  `id` mediumint(8) NOT NULL AUTO_INCREMENT,
+  `nav` mediumint(8) NOT NULL,
+  `title` varchar(25) NOT NULL,
+  `author` varchar(20) NOT NULL,
+  `from` varchar(20) NOT NULL,
+  `type` varchar(30) NOT NULL,
+  `content` text NOT NULL,
+  `info` varchar(200) NOT NULL,
+  `keyword` varchar(30) NOT NULL,
+  `comment` tinyint(1) NOT NULL,
+  `readcount` mediumint(8) NOT NULL,
+  `readlimit` tinyint(1) NOT NULL DEFAULT '0',
+  `thumbnail` varchar(50) NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `blog_article`
+--
+
+INSERT INTO `blog_article` (`id`, `nav`, `title`, `author`, `from`, `type`, `content`, `info`, `keyword`, `comment`, `readcount`, `readlimit`, `thumbnail`, `date`) VALUES
+(1, 0, '123123', '123123', '123123', '123123', '<p>123123</p>\r\n', '123123', '123123', 0, 0, 0, '/blog/uploads/20160718/20160718160735714.jpg', '2016-07-18 16:16:55');
 
 -- --------------------------------------------------------
 
