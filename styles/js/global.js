@@ -35,5 +35,8 @@ function insertAfter(newElement,targetElement){
         parent.insertBefore(newElement,targetElement.nextSibling);
     }
 }
-
-
+function getUrl(){
+    var input=document.getElementById("presentUrl");
+    input.setAttribute("value",window.location);
+}
+addLoadEvent(getUrl);

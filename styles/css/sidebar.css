@@ -17,6 +17,10 @@
 .rightView .loginModule,.rightView .account{
     padding:3%;
 }
+.rightView .account>img{
+    width:40px;
+    height:auto;
+}
 .rightView .login .input-group{
     margin:0 0 5% 0;
 }

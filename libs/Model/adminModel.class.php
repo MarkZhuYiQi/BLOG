@@ -12,7 +12,7 @@ use framework\libs\core as core;
 class adminModel
 {
     function findOneByUsername($username){
-        $sql="SELECT `id`,`password`,`username` FROM `blog_user` WHERE `username`='{$username}'";
+        $sql="SELECT `id`,`password`,`username`,`face` FROM `blog_user` WHERE `username`='{$username}'";
         return core\DB::findOne($sql);
     }
 

@@ -4,7 +4,8 @@
         用户登录
     </div>
     <div class="panel-body">
-        <form action="index.php?controller=index&method=checkLogin" method="post" class="loginModule">
+        <form action="index.php?controller=index&method=checkLogin" method="post" class="loginModule" id="loginModule">
+            <input type="hidden" name="presentUrl" id="presentUrl" />
             <div class="login">
                 <div class="input-group">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
@@ -28,8 +29,8 @@
     </div>
     <div class="panel-body">
         <div class="account">
-            <img src="{$img_path}/6.gif" alt="">
-            <span class="icon icon-user"></span> red_026
+            <img src="{$face}" alt="" class="img-circle">
+            <span class="icon icon-user"></span> {$username}
             <a type="register" class="logoff btn btn-danger pull-right" href="index.php?controller=index&method=logout">logoff</a>
         </div>
     </div>

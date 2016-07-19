@@ -12,13 +12,16 @@ use framework\libs\addons as addons;
 
 class indexController extends controller
 {
-    function index(){
-//        $model=M("index");
-//        $data=$model->index();
-//        core\VIEW::assign(array("data"=>$data));
-        $this->showArticleListFront();
+    function __construct(){
         $this->login();
-        core\VIEW::display("index.tpl");
+    }
+    function index($url=""){
+        $this->showArticleListFront();
+        if(empty($url)){
+            core\VIEW::display("index.tpl");
+        }else{
+            addons\tool::alertLocation($url);
+        }
     }
     function showArticleListFront(){
         $this->model=M("article");
@@ -39,6 +42,7 @@ class indexController extends controller
             $show["login"]=false;
             if(isset($_SESSION["user"])) {
                 $show["username"]=$_SESSION["user"];
+                $show["face"]=$_SESSION["face"];
             }
             core\VIEW::assign($show);
         }else{
@@ -56,7 +60,8 @@ class indexController extends controller
         $authObj=M("auth");
         if($auth=$authObj->checkAuth($username,sha1($password))){
             $_SESSION["user"]=$auth["username"];
-            $this->index();
+            $_SESSION["face"]=$auth["face"];
+            $this->index($_POST["presentUrl"]);
         }else{
             addons\tool::alertBack("username or password error!");
         }
@@ -66,6 +71,7 @@ class indexController extends controller
             addons\tool::alertBack("unexpected operation error!");
         }
         unset($_SESSION["user"]);
+        unset($_SESSION["face"]);
         addons\tool::alertLocation("index.php");
     }
 }
