@@ -1,17 +1,18 @@
+{if $login}
 <div class="panel panel-default">
     <div class="panel-heading">
         用户登录
     </div>
     <div class="panel-body">
-        <form action="#" method="post" class="loginModule">
+        <form action="index.php?controller=index&method=checkLogin" method="post" class="loginModule">
             <div class="login">
                 <div class="input-group">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="username" id="username"/>
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-                    <input type="text" class="form-control">
+                    <input type="password" class="form-control" name="password">
                 </div>
             </div>
             <input type="submit" class="submit btn btn-danger pull-left" name="submit" value="login">
@@ -19,6 +20,8 @@
         </form>
     </div>
 </div>
+{/if}
+{if $user}
 <div class="panel panel-default">
     <div class="panel-heading">
         <span class="icon icon-quote-left"></span> 欢迎 <span class="icon icon-quote-right"></span>
@@ -27,10 +30,11 @@
         <div class="account">
             <img src="{$img_path}/6.gif" alt="">
             <span class="icon icon-user"></span> red_026
-            <a type="register" class="logoff btn btn-danger pull-right" href="#">logoff</a>
+            <a type="register" class="logoff btn btn-danger pull-right" href="index.php?controller=index&method=logout">logoff</a>
         </div>
     </div>
 </div>
+{/if}
 <div class="newestNews alert alert-info">
     <span href="#" class="list-group-item active">最新文章<button class="close" data-dismiss="alert"><span>&times;</span></button></span>
     <a href="#" class="list-group-item">为纯电动让路 奥迪或将弃用V8发动机 <span class="badge">128,021</span></a>

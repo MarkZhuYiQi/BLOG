@@ -39,13 +39,17 @@ class page
     }
     function getUrl(){
         $url=$_SERVER["REQUEST_URI"];
-        $par=parse_url($url);
+        $par=parse_url($url);           //$par是一个数组 url地址存在path中，地址后的参数存在query中（没有则无此值）
         if(isset($par)){
-            parse_str($par['query'],$query);
-            if(isset($query["page"])){
-                unset($query["page"]);
+            if(isset($par["query"])) {
+                parse_str($par['query'], $query);
+                if (isset($query["page"])) {
+                    unset($query["page"]);
+                }
+                $url = $par["path"] . "?" . http_build_query($query);
+            }else{
+                $url=$par["path"] . "?";
             }
-            $url=$par["path"]."?".http_build_query($query);
         }
         return $url;
 
@@ -119,9 +123,4 @@ class page
             return 1;
         }
     }
-
-
-
-
-
 }

@@ -160,6 +160,11 @@ class adminController extends controller
         $this->model=M("article");
         parent::page($this->model->getCountArticle());
         $res=$this->model->getAllArticle();
+//        var_dump($res);
+        $res=addons\tool::htmlCovert($res);
+        $res=addons\tool::cutString($res,"title",20);
+        $res=addons\tool::cutString($res,"content",20);
+        $res=addons\tool::cutString($res,"info",20);
         core\VIEW::assign(array("allInfo"=>$res,"show"=>true));
         core\VIEW::assign(array("show"=>true));
         $this->adminDisplay("admin/admin_article.tpl");
@@ -247,15 +252,29 @@ class adminController extends controller
             $addInfo["readlimit"]=$_POST["readlimit"];
             $addInfo["comment"]=$_POST["comment"];
             $addInfo["date"]=date("Y-m-d H:i:s");
-            var_dump($addInfo);
-//            $artObj=M("article");
-//            if($artObj->modifyArticle($addInfo)){
-//                addons\tool::alertLocation("admin.php?controller=admin&method=ArticleList","modify article success!");
-//            }
+            $artObj=M("article");
+            $where="`id`={$_POST['id']}";
+            if($artObj->modifyArticle($addInfo,$where)){
+                addons\tool::alertLocation("admin.php?controller=admin&method=ArticleList","modify article success!");
+            }
         }
     }
     function deleteArticle(){
-
+        if(isset($_GET["id"])){
+            if(is_numeric($_GET["id"])&&$_GET["id"]>0){
+                $where="`id`={$_GET['id']}";
+                $artObj=M("article");
+                if($artObj->deleteArticle($where)){
+                    addons\tool::alertLocation("admin.php?controller=admin&method=articleList","delete successful!");
+                }else{
+                    addons\tool::alertBack("delete failed!");
+                }
+            }else{
+                addons\tool::alertBack("id illegal!");
+            }
+        }else{
+            addons\tool::alertBack("ID does not exist!");
+        }
     }
 
     /**

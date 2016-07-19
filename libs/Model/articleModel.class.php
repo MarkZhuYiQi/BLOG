@@ -36,8 +36,23 @@ class articleModel
             }
         }
     }
-    function getOneArticle($where){
-        $sql="SELECT `id`,`title`,`author`,`from`,`type`,`keyword`,`content`,`thumbnail`,`info`,`readlimit`,`comment`,`date` FROM `{$this->table}` WHERE `id`='{$where}'";
+    function getOneArticle($id){
+        $sql="SELECT `id`,`title`,`author`,`from`,`type`,`keyword`,`content`,`thumbnail`,`info`,`readlimit`,`comment`,`date` FROM `{$this->table}` WHERE `id`='{$id}'";
         return core\DB::findOne($sql);
+    }
+    function modifyArticle($addInfo,$where){
+        if(isset($addInfo)){
+            if(is_array($addInfo)){
+                if(core\DB::update($this->table,$addInfo,$where)){
+                    return true;
+                }
+                return false;
+            }
+            return false;
+        }
+        return false;
+    }
+    function deleteArticle($where){
+        return core\DB::delete($this->table,$where);
     }
 }

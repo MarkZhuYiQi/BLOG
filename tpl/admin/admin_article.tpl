@@ -155,6 +155,7 @@
     {/if}
     {if $modify}
         <form class="modify" action="admin.php?controller=admin&method=modifyArticle" method="post">
+            <input type="hidden" value="{$info.id}" name="id"/>
             <dl>
                 <dt>
                 <h2>修改文章</h2>
@@ -230,7 +231,7 @@
                     </div>
                 </dd>
                 <dd>
-                    <input type="submit" class="btn btn-danger submit" name="submit">
+                    <input type="submit" class="btn btn-danger submit" name="modify" value="modify" />
                 </dd>
             </dl>
         </form>

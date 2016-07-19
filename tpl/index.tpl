@@ -55,10 +55,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
+                {if $login}
                 <div class="alert alert-danger">
-                    please <a href="#" class="alert-link">login</a> or <a href="#" class="alert-link">register</a> a new account to acquire all the functions!
+                    please <a href="javascript:;" class="alert-link" id="login">login</a> or <a href="#" class="alert-link">register</a> a new account to acquire all the functions!
                     <button class="close" data-dismiss="alert"><span>&times;</span></button>
                 </div>
+                {/if}
                 <section class="newsList">
                     <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
                     <div class="lgroup text-center">
@@ -99,22 +101,20 @@
                         <img src="{$img_path}/bookmark.png" alt="">
                     </div>
                 </section>
+                {foreach $articleInfo as $info}
                 <section class="newsList">
-                    {foreach $articleInfo as $Info}
-                        {$Info.id}{$Info.thumbnail}
-                    {/foreach}
-                    <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
+                    <h3 class="newsTitle text-center">{$info.title}</h3>
                     <div class="lgroup text-center">
                         <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 108</button></button>
                         <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-tags"></span> 108</button>
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-eye-open"></span> <span> 100,028</span></button>
+                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-eye-open"></span> <span> {$info.readcount}</span></button>
                     </div>
 
                     <a href="#">
-                        <img src="{$img_path}/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
+                        <img src="{$info.thumbnail}"  alt="" class="img-responsive center-block newsImg thumbnail">
                     </a>
-                    <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
-                    <button class="btn btn-danger read">阅读全文</button>
+                    <p class="newsSummary"><a href="#">{$info.info}</a></p>
+                    <a class="btn btn-danger read" href="index.php?controller=index&method=showArticleDetail&id={$info.id}">阅读全文</a>
                     <div class="date text-center">
                         <span class="month">7月</span><span class="day">29</span>
                     </div>
@@ -122,16 +122,11 @@
                         <img src="{$img_path}/bookmark.png" alt="">
                     </div>
                 </section>
+                {/foreach}
                 <div class="page text-center">
-                    <ul class="pagination">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li class="active"><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">5</a></li>
-                        <li class="disabled"><a href="">&raquo;</a></li>
-                    </ul>
+                    {if $showPage}
+                        {$nav}
+                    {/if}
                 </div>
             </div>
             <div class="col-md-4 rightView">
@@ -155,5 +150,7 @@
 </div>
 <script type="text/javascript" src="{$js_path}/jquery.js"></script>
 <script type="text/javascript" src="{$js_path}/bootstrap.js"></script>
+<script type="text/javascript" src="{$js_path}/global.js"></script>
+<script type="text/javascript" src="{$js_path}/index.js"></script>
 </body>
 </html>
