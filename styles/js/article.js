@@ -15,11 +15,13 @@ function replyFunc(){
     var textarea=document.getElementById("TextArea1");
     var replys=document.getElementsByClassName("icon-reply");
     var name=document.getElementsByClassName("username");
+    console.log(replys);
+    console.log(name);
     for(var i=0;i<replys.length;i++){
-        var j=i;
-        replys[i].onclick=function(j){
-            alert(j);
-            textarea.innerHTML="对"+name[j].value+"说道:";
+        replys[i].i=i;
+        replys[i].onclick=function(){
+            // alert(this.i);
+            textarea.innerHTML="对"+name[this.i].innerHTML+"说道:";
 
         }
     }

@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5b3881-70ad-46b1-b41e-63898d3dfc50" name="Default" comment="add articlemodule">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720110148829.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720110220332.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720110928825.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720110941385.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111004997.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111106859.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111118313.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111145559.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111328809.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111340141.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/20160720/20160720111404534.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/Model/commentModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.sql" afterPath="$PROJECT_DIR$/blog.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller/adminController.class.php" afterPath="$PROJECT_DIR$/libs/Controller/adminController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/Controller/indexController.class.php" afterPath="$PROJECT_DIR$/libs/Controller/indexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/article.css" afterPath="$PROJECT_DIR$/styles/css/article.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/js/article.js" afterPath="$PROJECT_DIR$/styles/js/article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/js/global.js" afterPath="$PROJECT_DIR$/styles/js/global.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/article.html" afterPath="$PROJECT_DIR$/tpl/article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/index.tpl" afterPath="$PROJECT_DIR$/tpl/index.tpl" />
     </list>
     <ignored path="BLOG.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +28,8 @@
       <file leaf-file-name="adminController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="173" column="109" selection-start-line="173" selection-start-column="109" selection-end-line="173" selection-end-column="109" />
+            <state relative-caret-position="2988">
+              <caret line="172" column="36" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -56,8 +38,8 @@
       <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/article.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+            <state relative-caret-position="307">
+              <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -66,8 +48,8 @@
       <file leaf-file-name="indexController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/Controller/indexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
+            <state relative-caret-position="1260">
+              <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
               <folding>
                 <element signature="e#122#154#0#PHP" expanded="true" />
               </folding>
@@ -78,8 +60,8 @@
       <file leaf-file-name="article.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/js/article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="496">
+              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -88,20 +70,9 @@
       <file leaf-file-name="commentModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/Model/commentModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="468">
               <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding>
-                <marker date="1469001057249" expanded="true" signature="370:377" ph="SELECT ${{$t... " />
-                <marker date="1469001057249" expanded="true" signature="370:529" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-                <marker date="1469001057249" expanded="true" signature="761:812" ph="SELECT `id` {}" />
-                <marker date="1469001057249" expanded="true" signature="761:824" ph="SELECT count... ${{$this-&gt;table}}" />
-                <marker date="1469001057249" expanded="true" signature="761:847" ph="SELECT count... ${{$this-&gt;table}}" />
-                <marker date="1469001057249" expanded="true" signature="1035:1055" ph="SELECT `face... " />
-                <marker date="1469001057249" expanded="true" signature="1035:1065" ph="SELECT `face... ${{$this-&gt;table}}" />
-                <marker date="1469001057249" expanded="true" signature="1035:1083" ph="SELECT `face... blog_user" />
-                <marker date="1469001057249" expanded="true" signature="1035:1091" ph="SELECT `face... blog_user" />
-                <marker date="1469001057249" expanded="true" signature="1035:1100" ph="SELECT `face... blog_user" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,11 +80,9 @@
       <file leaf-file-name="article.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/article.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
-              <folding>
-                <marker date="1468985640790" expanded="true" signature="37:243" ph="{...}" />
-              </folding>
+            <state relative-caret-position="1800">
+              <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,8 +90,8 @@
       <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="72" column="94" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
+            <state relative-caret-position="576">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -215,10 +184,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1060" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -527,8 +496,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -645,6 +614,7 @@
       <workItem from="1468895231912" duration="21838000" />
       <workItem from="1468929721345" duration="10835000" />
       <workItem from="1468979117727" duration="23433000" />
+      <workItem from="1469016599730" duration="4250000" />
     </task>
     <task id="LOCAL-00001" summary="first commit, prepare to build the homepage.">
       <created>1467897560594</created>
@@ -734,17 +704,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331389000" />
+    <option name="totallyTimeSpent" value="335639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14684288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -755,6 +724,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -826,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2484">
           <caret line="108" column="25" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -926,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="157" column="60" selection-start-line="157" selection-start-column="60" selection-end-line="157" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="685">
           <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1403">
           <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="70" column="67" selection-start-line="70" selection-start-column="67" selection-end-line="70" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="3461" column="21" selection-start-line="3461" selection-start-column="21" selection-end-line="3461" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,9 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <marker date="1468976955899" expanded="true" signature="227:315" ph="SELECT `id`,... blog_user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1357">
           <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,11 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <marker date="1468805434282" expanded="true" signature="1401:1449" ph="INSERT INTO $... " />
-            <marker date="1468805434282" expanded="true" signature="1830:1875" ph="UPDATE `${{$... " />
-            <marker date="1468805434282" expanded="true" signature="2200:2239" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,46 +1042,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="182" />
-          <folding>
-            <marker date="1468908555525" expanded="true" signature="305:356" ph="SELECT count... ${{$this-&gt;table}}" />
-            <marker date="1468908555525" expanded="true" signature="480:634" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1468908555525" expanded="true" signature="743:842" ph="SELECT `id`,... $" />
-            <marker date="1468908555525" expanded="true" signature="1214:1365" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/Controller/adminController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="173" column="109" selection-start-line="173" selection-start-column="109" selection-end-line="173" selection-end-column="109" />
+        <state relative-caret-position="2988">
+          <caret line="172" column="36" selection-start-line="172" selection-start-column="36" selection-end-line="172" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/Model/commentModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="468">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding>
-            <marker date="1469001057249" expanded="true" signature="370:377" ph="SELECT ${{$t... " />
-            <marker date="1469001057249" expanded="true" signature="370:529" ph="SELECT `id`,... ${{$this-&gt;table}}" />
-            <marker date="1469001057249" expanded="true" signature="761:812" ph="SELECT `id` {}" />
-            <marker date="1469001057249" expanded="true" signature="761:824" ph="SELECT count... ${{$this-&gt;table}}" />
-            <marker date="1469001057249" expanded="true" signature="761:847" ph="SELECT count... ${{$this-&gt;table}}" />
-            <marker date="1469001057249" expanded="true" signature="1035:1055" ph="SELECT `face... " />
-            <marker date="1469001057249" expanded="true" signature="1035:1065" ph="SELECT `face... ${{$this-&gt;table}}" />
-            <marker date="1469001057249" expanded="true" signature="1035:1083" ph="SELECT `face... blog_user" />
-            <marker date="1469001057249" expanded="true" signature="1035:1091" ph="SELECT `face... blog_user" />
-            <marker date="1469001057249" expanded="true" signature="1035:1100" ph="SELECT `face... blog_user" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/Controller/indexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="98" column="59" selection-start-line="98" selection-start-column="59" selection-end-line="98" selection-end-column="59" />
+        <state relative-caret-position="1260">
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
           <folding>
             <element signature="e#122#154#0#PHP" expanded="true" />
           </folding>
@@ -1145,32 +1075,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
           <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/article.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
-          <folding>
-            <marker date="1468985640790" expanded="true" signature="37:243" ph="{...}" />
-          </folding>
+        <state relative-caret-position="1800">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="72" column="94" selection-start-line="72" selection-start-column="94" selection-end-line="72" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+        <state relative-caret-position="576">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1179,14 +1098,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="239" column="0" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/js/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="496">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
           <folding />
         </state>
       </provider>
