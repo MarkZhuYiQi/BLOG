@@ -36,6 +36,7 @@ function insertAfter(newElement,targetElement){
     }
 }
 function getUrl(){
+    if(!document.getElementById("presentUrl"))return false;
     var input=document.getElementById("presentUrl");
     input.setAttribute("value",window.location);
 }

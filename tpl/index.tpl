@@ -61,46 +61,6 @@
                     <button class="close" data-dismiss="alert"><span>&times;</span></button>
                 </div>
                 {/if}
-                <section class="newsList">
-                    <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
-                    <div class="lgroup text-center">
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 108</button></button>
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-tags"></span> 108</button>
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-eye-open"></span> <span> 100,028</span></button>
-                    </div>
-
-                    <a href="#">
-                        <img src="styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
-                    </a>
-                    <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
-                    <a href="index.php?controller=content&method=show" target="_blank" class="btn btn-danger read">阅读全文</a>
-                    <div class="date text-center">
-                        <span class="month">7月</span><span class="day">29</span>
-                    </div>
-                    <div class="bookmark">
-                        <img src="styles/img/bookmark.png" alt="">
-                    </div>
-                </section>
-                <section class="newsList">
-                    <h3 class="newsTitle text-center">动力超300马力 全新雷诺梅甘娜R.S.消息</h3>
-                    <div class="lgroup text-center">
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-thumbs-up"></span> 108</button></button>
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-tags"></span> 108</button>
-                        <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-eye-open"></span> <span> 100,028</span></button>
-                    </div>
-
-                    <a href="#">
-                        <img src="styles/img/megane.jpg"  alt="megane" class="img-responsive center-block newsImg thumbnail">
-                    </a>
-                    <p class="newsSummary"><a href="#">日前，有海外媒体报道了全新一代雷诺梅甘娜R.S.的消息，据悉，全新梅甘娜R.S.的动力或将超过300马力，并会继续采用前轮驱动。根据消息，全新梅甘娜R.S.将仅推出5门版车型，较现款3门版车型的实用性更好。</a></p>
-                    <button class="btn btn-danger read">阅读全文</button>
-                    <div class="date text-center">
-                        <span class="month">7月</span><span class="day">29</span>
-                    </div>
-                    <div class="bookmark">
-                        <img src="{$img_path}/bookmark.png" alt="">
-                    </div>
-                </section>
                 {foreach $articleInfo as $info}
                 <section class="newsList">
                     <h3 class="newsTitle text-center">{$info.title}</h3>
@@ -110,7 +70,7 @@
                         <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-eye-open"></span> <span> {$info.readcount}</span></button>
                     </div>
 
-                    <a href="#">
+                    <a href="index.php?controller=index&method=showArticleDetail&id={$info.id}">
                         <img src="{$info.thumbnail}"  alt="" class="img-responsive center-block newsImg thumbnail">
                     </a>
                     <p class="newsSummary"><a href="#">{$info.info}</a></p>

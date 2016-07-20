@@ -171,7 +171,7 @@ class adminController extends controller
     }
     function addArticle(){
         if(isset($_POST["submit"])){
-            if(addons\validate::checkNull($_POST["title"]))addons\tool::alertBack("title could not be null");;
+            if(addons\validate::checkNull($_POST["title"]))addons\tool::alertBack("title could not be null");
 //            if(addons\validate::checkLength($_POST["title"],6,"less"))addons\tool::alertBack("title could not less than 6");
 //            if(addons\validate::checkLength($_POST["title"],25,"more"))addons\tool::alertBack("title could not more than 25");
             if(addons\validate::checkNull($_POST["author"]))addons\tool::alertBack("author could not be null");

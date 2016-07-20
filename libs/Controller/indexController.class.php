@@ -14,6 +14,7 @@ class indexController extends controller
 {
     function __construct(){
         $this->login();
+        $this->showComment();
     }
     function index($url=""){
         $this->showArticleListFront();
@@ -73,5 +74,33 @@ class indexController extends controller
         unset($_SESSION["user"]);
         unset($_SESSION["face"]);
         addons\tool::alertLocation("index.php");
+    }
+    function addComment(){
+        if(isset($_POST["follow"])){
+            if(addons\validate::checkNull($_POST["commentDetail"]))addons\tool::alertBack("comment could not be null");
+            if(!empty($_POST["commentDetail"])&&!empty($_GET["id"])){
+                $comment["content"]=$_POST["commentDetail"];
+                $comment["ArticleId"]=$_GET["id"];
+                $comment["user"]=$_SESSION["user"];
+                $comment["date"]=date("Y-m-d H:i:s");
+                $commObj=M("comment");
+                if($commObj->addComment($comment)){
+                    addons\tool::alertLocation("http://localhost/blog/index.php?controller=index&method=showArticleDetail&id={$comment['ArticleId']}","submit success!");
+                }
+            }else{
+                addons\tool::alertBack("comments could not be null or id error!");
+            }
+        }
+    }
+    function showComment(){
+        if(isset($_GET["id"])){
+            $articleId=$_GET["id"];
+            $commObj=M("comment");
+            if($comment=$commObj->showComment($articleId)){
+                core\VIEW::assign(array("comment"=>$comment));
+            }else{
+                core\VIEW::assign(array("comment"=>false));
+            }
+        }
     }
 }
