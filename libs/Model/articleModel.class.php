@@ -37,8 +37,13 @@ class articleModel
         }
     }
     function getOneArticle($id){
-        $sql="SELECT `id`,`title`,`author`,`from`,`type`,`keyword`,`content`,`thumbnail`,`info`,`readlimit`,`comment`,`date` FROM `{$this->table}` WHERE `id`='{$id}'";
+        $sql="SELECT `id`,`title`,`author`,`from`,`type`,`keyword`,`content`,`thumbnail`,`info`,`readlimit`,`readcount`,`comment`,`date` FROM `{$this->table}` WHERE `id`='{$id}'";
         return core\DB::findOne($sql);
+    }
+    function setArticleReadCount($id){
+        $where="`id`={$id}";
+        $additional="`readcount`=`readcount`+1";
+        return core\DB::update($this->table,"",$where,$additional);
     }
     function modifyArticle($addInfo,$where){
         if(isset($addInfo)){

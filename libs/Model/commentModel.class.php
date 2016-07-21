@@ -18,14 +18,14 @@ class commentModel
     }
     function showComment($articleId){
         $sql="SELECT `id`,`user`,`content`,`state`,`articleId`,`replyId`,`date`,`sustain`,`oppose` FROM `{$this->table}` WHERE `ArticleId`={$articleId} ORDER BY `date` DESC $this->limit";
-        $res=core\DB::findAll($sql);
+        if(!($res=core\DB::findAll($sql)))return false;
         foreach($res as $key=>$value) {
             if ($face = $this->getUserFace($value["user"])) {
                 $res[$key]["face"] = $face;
             }
             $sql = "SELECT count(`id`) as `total` FROM `{$this->table}` WHERE `id`={$res[$key]['replyId']}";
             $total = core\DB::findOne($sql);
-            $res[$key]["replyTotal"] = $total['total'];
+            $res[$key]["replyTotal"] = "<script>document.write('".$total['total']."')</script>";
         }
         return $res;
     }

@@ -34,8 +34,8 @@ class DB
     public static function insert($table,$arr){
         return self::$db->insert($table,$arr);
     }
-    public static function update($table,$arr,$where){
-        return self::$db->update($table,$arr,$where);
+    public static function update($table,$arr,$where,$additional){
+        return self::$db->update($table,$arr,$where,$additional);
     }
     public static function delete($table,$where){
         return self::$db->delete($table,$where);

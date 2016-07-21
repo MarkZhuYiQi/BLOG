@@ -16,12 +16,6 @@
 <div class="container top">
     <div class="row">
         <div class="col-md-8">
-            {if $login}
-            <div class="alert alert-danger">
-                please <a href="#" class="alert-link">login</a> or <a href="#" class="alert-link">register</a> a new account to acquire all the functions!
-                <button class="close" data-dismiss="alert"><span>&times;</span></button>
-            </div>
-            {/if}
             <section class="article">
                 <input type="hidden" name="articleId" value="{$info.id}" />
                 <header class="title">
@@ -31,6 +25,7 @@
                         <span class="from">from:{$info.from}</span>
                         <span class="type">type:{$info.type}</span>
                         <span class="type">author:{$info.author}</span>
+                        <span class="type">clicks:{$info.readcount}</span>
                     </p>
                 </header>
                 <article class="detail">
@@ -83,7 +78,7 @@
             </div>
             {if $login}
             <div class="alert alert-danger">
-                please <a href="#" class="alert-link">login</a> or <a href="#" class="alert-link">register</a> a new account to acquire all the functions!
+                please <a href="javascript:;" class="alert-link" id="login">login</a> or <a href="#" class="alert-link">register</a> a new account to acquire all the functions!
                 <button class="close" data-dismiss="alert"><span>&times;</span></button>
             </div>
             {/if}
@@ -103,7 +98,9 @@
                             <a href="#">{$detail.content}</a>
                         </div>
                         <div class="reply">
-                            <a class="icon icon-thumbs-up">[{$detail.sustain}]</a><a class="icon icon-thumbs-down">[{$detail.oppose}]</a><a class="icon icon-reply" href="javascript:;">[{$detail.replyTotal}]</a>
+                            <a class="icon icon-thumbs-up" href="index.php?controller=index&method=commentSustain&id={$detail.id}">[{$detail.sustain}]</a>
+                            <a class="icon icon-thumbs-down" href="index.php?controller=index&method=commentOppose&id={$detail.id}">[{$detail.oppose}]</a>
+                            <a class="icon icon-reply" href="javascript:;">[{$detail.replyTotal}]</a>
                         </div>
                         <div class="clear"></div>
                     </li>
@@ -174,5 +171,6 @@
 <script type="text/javascript" src="{$js_path}/bootstrap.js"></script>
 <script type="text/javascript" src="{$js_path}/global.js"></script>
 <script type="text/javascript" src="{$js_path}/article.js"></script>
+<script type="text/javascript" src="{$js_path}/ajax.php"></script>
 </body>
 </html>

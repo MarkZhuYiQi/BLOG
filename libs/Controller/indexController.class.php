@@ -33,6 +33,7 @@ class indexController extends controller
     function showArticleDetail(){
         $this->model=M("article");
         $id=$_GET["id"];
+        $this->model->setArticleReadCount($id);
         $res=$this->model->getOneArticle($id);
         core\VIEW::assign(array("info"=>$res));
         core\VIEW::display("article.html");
@@ -103,4 +104,13 @@ class indexController extends controller
             }
         }
     }
+    function commentSustain(){
+
+
+
+    }
+    function commentOppose(){
+
+    }
+
 }

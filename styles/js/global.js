@@ -41,3 +41,11 @@ function getUrl(){
     input.setAttribute("value",window.location);
 }
 addLoadEvent(getUrl);
+function focusOnLogin(){
+    if(!document.getElementById("login"))return false;
+    var login=document.getElementById("login");
+    login.onclick=function(){
+        document.getElementById("username").focus();
+    };
+}
+addLoadEvent(focusOnLogin);

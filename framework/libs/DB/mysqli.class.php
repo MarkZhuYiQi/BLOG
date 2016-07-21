@@ -52,7 +52,7 @@ class mysqli
         $sql = "INSERT INTO {$table} ({$keys}) VALUES({$values})";
         return $this->query($sql);
     }
-    function update($table, $arr,$where)
+    function update($table, $arr="",$where,$additional="")
     {
         if(is_array($arr)){
             foreach($arr as $key=>$value) {
@@ -61,7 +61,8 @@ class mysqli
             }
             $keysAndValues=implode(",",$string);
         }
-        $sql="UPDATE `{$table}` SET {$keysAndValues} WHERE {$where}";
+        if(!isset($keysAndValues))$keysAndValues="";
+        $sql="UPDATE `{$table}` SET {$keysAndValues}{$additional} WHERE {$where}";
         return $this->query($sql);
     }
     function delete($table,$where){

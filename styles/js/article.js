@@ -12,27 +12,26 @@ function addImgClass(){
 }
 //这个方法兼容性有问题，最低IE版本为9
 function replyFunc(){
-    var textarea=document.getElementById("TextArea1");
+    // if(!document.getElementById("TextArea1"))return false;
     var replys=document.getElementsByClassName("icon-reply");
     var name=document.getElementsByClassName("username");
-    console.log(replys);
-    console.log(name);
-    for(var i=0;i<replys.length;i++){
-        replys[i].i=i;
-        replys[i].onclick=function(){
-            // alert(this.i);
-            textarea.innerHTML="对"+name[this.i].innerHTML+"说道:";
-
+    if(!document.getElementById("TextArea1")){
+        for(var i=0;i<replys.length;i++){
+            replys[i].i=i;
+            replys[i].onclick=focusOnLogin();
+        }
+    }else{
+        var textarea=document.getElementById("TextArea1");
+        console.log(replys);
+        console.log(name);
+        for(var i=0;i<replys.length;i++){
+            replys[i].i=i;
+            replys[i].onclick=function(){
+                textarea.innerHTML="对"+name[this.i].innerHTML+"说道:";
+            }
         }
     }
 }
-// function replyFunc(){
-//     var li=document.getElementById("newestComment");
-//     var labels=li.getElementsByTagName("a");
-//     for(var i=0;i<labels.length;i++){
-//
-//     }
-// }
 
 
 
