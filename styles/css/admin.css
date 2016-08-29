@@ -43,8 +43,27 @@ header{
     float:left;
 }
 
+#allpanel{
+    width:18%;
+}
+#allpanel .panel-heading{
+    padding:0;
+}
+#allpanel .btn{
+    display:block;
+    margin:0;
+}
 
-
+#sidebar{
+    width:15%;
+}
+#sidebar .side{
+    display:block;
+}
+#sidebar .btn{
+    display:block;
+    width:100%;
+}
 
 .admin_login{
     width:40%;

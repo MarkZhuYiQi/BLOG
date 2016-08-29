@@ -21,7 +21,7 @@ class adminController extends controller
         core\VIEW::assign($interface);
     }
     function index(){
-        $this->showArticleListFront();
+//        $this->showArticleListFront();
         $this->adminDisplay("admin/admin.tpl");
     }
     function login(){
