@@ -11,6 +11,12 @@ namespace framework\libs\core;
 class DB
 {
     public static $db;
+
+    /**
+     * @param $dbType   数据库类型
+     * @param $config   数据库配置
+     * 根据数据库的命名空间新建一个对象
+     */
     public static function init($dbType,$config){
         $dbType="framework\\libs\\DB\\$dbType";
         self::$db=new $dbType;

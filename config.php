@@ -9,15 +9,15 @@ session_start();
 error_reporting(E_ALL ^ E_DEPRECATED);
 header('Content-type:text/html;charset=utf-8');
 define("ROOT_PATH",     str_replace('\\','/',str_replace('\\','/',dirname(__FILE__))));
-define("URL_PATH",      str_replace('\\','/',mb_substr($_SERVER["REQUEST_URI"],0,5)));
-define('CSS_PATH',      URL_PATH."/styles/css");
-define('JS_PATH',       URL_PATH."/styles/js");
-define('IMG_PATH',      URL_PATH."/styles/img");
-define("UPLOAD_DIR",    "/uploads");
-define("UPLOAD_PATH",   ROOT_PATH.UPLOAD_DIR);
+define("URL_PATH",      str_replace('\\','/',mb_substr($_SERVER["REQUEST_URI"],0,5)));      // /blog,获取域名后面的值
+define('CSS_PATH',      URL_PATH."/styles/css");            // /blog/styles/css
+define('JS_PATH',       URL_PATH."/styles/js");             // /blog/styles/js
+define('IMG_PATH',      URL_PATH."/styles/img");            // /blog/styles/img
+define("UPLOAD_DIR",    "/uploads");                        // /uploads
+define("UPLOAD_PATH",   ROOT_PATH.UPLOAD_DIR);              // /blog/styles/uploads
 
-define("PAGE_OFFSET",   2);
-define("PAGE_SIZE",     5);
+define("PAGE_OFFSET",   2);                                 //页码偏移量 +-2
+define("PAGE_SIZE",     5);                                 //每页显示数量
 $assigns=array(
     'url_path'=>URL_PATH,
     'css_path'=>CSS_PATH,
