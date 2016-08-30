@@ -19,7 +19,19 @@ $(document).ready(function(){
     $("#sidebar dd button").click(function(){
         $("#sidebar dd button").removeClass("active");
         $(this).addClass("active");
-        $("#main").load("test2.html");
+        // $("#main").load("test2.html");
+        $.get("test.php?fuck=suck&mark=yinxiong",function(data,status){
+            $("#main").html(data+status);
+        });
+        $.post("test.php",{
+            name:"mark",
+            age:26,
+            status:"he is destorying his life every day."
+        },function(data){
+            $("#main").html($("#main").html()+"\n"+data);
+        });
     });
+
+
 
 });

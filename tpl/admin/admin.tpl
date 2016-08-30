@@ -10,7 +10,9 @@
 </head>
 <body>
     {include file="admin/admin_header.html"}
+    <div id="main">
 
+    </div>
     <script type="text/javascript" src="{$js_path}/jquery.js"></script>
     <script type="text/javascript" src="{$js_path}/bootstrap.js"></script>
 </body>

@@ -19,6 +19,10 @@ $(document).ready(function(){
     $("#sidebar dd button").click(function(){
         $("#sidebar dd button").removeClass("active");
         $(this).addClass("active");
+        // alert($(this).attr("href"));
+        $.get($(this).attr("href"),function(data){
+            $("#main").html(data);
+        });
     });
 
 });
