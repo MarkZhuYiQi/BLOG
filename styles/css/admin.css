@@ -57,6 +57,10 @@ header{
 
 #sidebar{
     width:15%;
+    height:670px;
+    background:#eee;
+    border-right:2px solid #ccc;
+
 }
 #sidebar .side{
     display:block;
@@ -64,8 +68,19 @@ header{
 #sidebar .btn{
     display:block;
     width:100%;
+    outline:none;
+    border-radius:0;
 }
-
+#sidebar .btn-danger{
+    font-size:18px;
+}
+#sidebar h4{
+    margin:0;
+    padding:0;
+}
+#sidebar dl{
+    margin:0;
+}
 
 
 .admin_login{
