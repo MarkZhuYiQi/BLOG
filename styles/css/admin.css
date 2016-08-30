@@ -43,6 +43,7 @@ header{
     float:left;
 }
 
+
 #allpanel{
     width:18%;
 }
@@ -64,6 +65,8 @@ header{
     display:block;
     width:100%;
 }
+
+
 
 .admin_login{
     width:40%;

@@ -1,39 +1,107 @@
-
 <!--
-    <header>
-        <h2>Welcome to BLOG background</h2>
-    </header>
-    <div class="function">
-        <ul class="nav navbar-nav">
-            <li class="active dropdown">
-                <a href="admin.php?controller=admin&method=showUser" class="dropdown-toggle" data-toggle="dropdown">用户管理<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="admin.php?controller=admin&method=userList">用户列表</a></li>
-                    <li><a href="admin.php?controller=admin&method=addUser">添加用户</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="admin.php?controller=admin&method=showArticle" class="dropdown-toggle" data-toggle="dropdown">文章管理<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="admin.php?controller=admin&method=articleList">文章列表</a></li>
-                    <li><a href="admin.php?controller=admin&method=addArticle">添加文章</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="admin.php?controller=admin&method=showComment" class="dropdown-toggle" data-toggle="dropdown">评论管理<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="admin.php?controller=admin&method=commentList">评论列表</a></li>
-                    <li><a href="admin.php?controller=admin&method=audit">评论审核</a></li>
-                </ul>
-            </li>
-            <li><a href="admin.php?controller=admin&method=logout">退出</a></li>
-        </ul>
-        <p class="user">您好，{$admin}</p>
-    </div>
+<header>
+    <h2>Welcome to BLOG background</h2>
+</header>
+<div class="function">
+    <ul class="nav navbar-nav">
+        <li class="active dropdown">
+            <a href="admin.php?controller=admin&method=showUser" class="dropdown-toggle" data-toggle="dropdown">用户管理<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="admin.php?controller=admin&method=userList">用户列表</a></li>
+                <li><a href="admin.php?controller=admin&method=addUser">添加用户</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="admin.php?controller=admin&method=showArticle" class="dropdown-toggle" data-toggle="dropdown">文章管理<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="admin.php?controller=admin&method=articleList">文章列表</a></li>
+                <li><a href="admin.php?controller=admin&method=addArticle">添加文章</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="admin.php?controller=admin&method=showComment" class="dropdown-toggle" data-toggle="dropdown">评论管理<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="admin.php?controller=admin&method=commentList">评论列表</a></li>
+                <li><a href="admin.php?controller=admin&method=audit">评论审核</a></li>
+            </ul>
+        </li>
+        <li><a href="admin.php?controller=admin&method=logout">退出</a></li>
+    </ul>
+    <p class="user">您好，{$admin}</p>
+</div>
 -->
-    <header>
-        <h2>Welcome to BLOG background</h2>
-    </header>
-    <div class="sidebar">
 
+<header>
+    <h2>Welcome to BLOG background</h2>
+</header>
+<!--
+<div class="panel-group" id="allpanel">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="btn" style="display:block;margin:0;" href="#collapseOne" data-toggle="collapse" data-parent="#allpanel">User Management</a>
+            </h4>
+        </div>
+        &lt;!&ndash;设置collapse第一次不显示，如果想要第一次显示就设置in&ndash;&gt;
+        <div class="panel-collapse collapse" id="collapseOne">
+            <div class="panel-body">
+                <button class="btn">User List</button>
+                <button class="btn">Add User</button>
+            </div>
+        </div>
     </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="btn" href="#collapseTwo" data-toggle="collapse" data-parent="#allpanel">Article Management</a>
+            </h4>
+        </div>
+        &lt;!&ndash;设置collapse第一次不显示，如果想要第一次显示就设置in&ndash;&gt;
+        <div class="panel-collapse collapse" id="collapseTwo">
+            <div class="panel-body">
+                two content
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="btn" href="#collapseThree" data-toggle="collapse" data-parent="#allpanel">Comment Management</a>
+            </h4>
+        </div>
+        &lt;!&ndash;设置collapse第一次不显示，如果想要第一次显示就设置in&ndash;&gt;
+        <div class="panel-collapse collapse" id="collapseThree">
+            <div class="panel-body">
+                three content
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="btn" href="#collapseFour" data-toggle="collapse" data-parent="#allpanel">Log Out</a>
+            </h4>
+        </div>
+        &lt;!&ndash;设置collapse第一次不显示，如果想要第一次显示就设置in&ndash;&gt;
+        <div class="panel-collapse collapse" id="collapseFour">
+            <div class="panel-body">
+                four content
+            </div>
+        </div>
+    </div>
+</div>-->
+<div id="sidebar">
+    <div class="side">
+        <div class="panel-header">
+            <h4>
+                <button class="btn btn-danger">User Management</button>
+            </h4>
+        </div>
+        <div class="content">
+            <dl>
+                <dd><button class="btn btn-default">User List</button></dd>
+                <dd><button class="btn btn-default">Add User</button></dd>
+            </dl>
+        </div>
+    </div>
+</div>
